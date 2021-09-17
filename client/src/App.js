@@ -9,7 +9,7 @@ import LogIn from "./components/LogIn";
 import Navbarmenu from "./components/menu/Navbarmenu";
 import StudyRoom from "./components/StudyRoom";
 import SignUp from "./components/SignUp";
-import MyChats  from "./components/MyChats"
+import Chat  from "./components/Chat"
 function App() {
 	return (
 		<div>
@@ -25,7 +25,7 @@ function App() {
 					<Route path="/LogIn" component={LogIn} />
 					<Route path="/SignUp" component={SignUp} />
 					<Route path="/StudyRoom" component={StudyRoom} />
-					<Route path="/Chat" component={MyChats} />
+					<Route path="/Chat" component={Chat} />
 					
 				</Switch>
 			</Router>
