@@ -27,14 +27,14 @@ export const SignUp = () => {
 		e.preventDefault();
 
 		const { name, email, phone, work, password, cpassword } = user;
-
+		const username = name
 		const res = await fetch("user/register", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
 			},
 			body: JSON.stringify({
-				name,
+				username,
 				email,
 				phone,
 				work,
