@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const httpServer = require("http").createServer(app)
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -10,6 +11,13 @@ app.use(
     origin: "http://localhost:3000",
   })
 );
+
+const io = require("socket.io")(httpServer,{
+    cors:{
+        origin:"*",
+        credentials:true
+    }
+})
 
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
@@ -36,7 +44,43 @@ app.get("/test_api", (req, res) => {
   res.json("just another test message");
 });
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+const users = {};
+
+io.on("connection", (socket) => {
+    console.log("someone connecte and socket id " + socket.id);
+
+    socket.on("disconnect", () => {
+        console.log(`${socket.id} disconnected`);
+
+        for (let user in users) {
+            if (users[user] === socket.id) {
+                delete users[user];
+            }
+        }
+
+        io.emit("all_users", users);
+    });
+
+    socket.on("new_user", (username) => {
+        console.log("Server : " + username);
+        users[username] = socket.id;
+
+        io.emit("all_users", users);
+    });
+
+    socket.on("send_message", (data) => {
+        console.log(data);
+
+        const socketId = users[data.receiver];
+        io.to(socketId).emit("new_message", data);
+    });
+});
+
+// app.listen(port, () => console.log(`Listening on port ${port}`));
+
+httpServer.listen(port, ()=>{
+    console.log(`Listening on port ${port}`)
+})
 
 
 // a comment.
