@@ -37,7 +37,7 @@ input {
 }
 .login-form {
 	text-align: center;
-	box-shadow: 0.8rem 0.8rem .6rem #888888;
+	/* box-shadow: 0.8rem 0.8rem .6rem #A7BBC7; */
 	background-color: white;
 	height:73vh;
 	width: 30vw;
@@ -48,7 +48,7 @@ input {
 
 .signup-form {
 	text-align: center;
-	box-shadow:  0.8rem 0.8rem .6rem #888888;
+	/* box-shadow:  0.8rem 0.8rem .6rem #A7BBC7; */
 	background-color: white;
 	height:73vh;
 	width: 30vw;

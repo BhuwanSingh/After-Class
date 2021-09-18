@@ -6,11 +6,17 @@ import Flipcard4 from "./Flipcard4";
 import "./styles.css"
 function Home() {
 	return (
-		<div>
+		<div >
+			<div className="left">
 			<Flipcard />
 			<Flipcard2 />
 			<Flipcard3 />
 			<Flipcard4 />
+			</div>
+			<div className="right">
+
+			</div>
+			
 		</div>
 	);
 }
