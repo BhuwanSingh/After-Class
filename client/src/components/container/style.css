@@ -1,20 +1,26 @@
 .container-wb{
     position:fixed;
-    width:100%;
-    height:100%;
-    background: linear-gradient(45deg,#03A9F4,#4CAF50);
+    width:100vw;
+    height:120vh;
+    overflow: scroll;
+    background: linear-gradient(#8393be,white);
 }
 
 .color-picker-container-wb{
     text-align: center;
     display: inline;
-    color: white;
+    color: #1a2238;
+    font-weight: bold;
+    font-size: 3vh;
 }
 
 .brushsize-container-wb{
+    text-align: center;
     display: inline;
-    color: white;
-    margin-left: 12px;
+    color: #1a2238;
+    font-weight: bold;
+    font-size: 3vh;
+    margin-left: 3vh;
 }
 
 .tools-section-wb{
@@ -22,9 +28,23 @@
 }
 
 .board-container-wb{
-    width: 90%;
-    height: 90%;
+    width: 100vw;
+    height: 120vh;
     margin: auto;
     margin-top: 1%;
     background: white;
+}
+.txt{
+    font-family: 'Times New Roman', Times, serif;
+    color: #1a2238;
+    margin-left: 2%;
+}
+.tpt{
+    font-size: 3vh;
+    margin-left: 2.5%;
+    color: #1a2238;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bb{
+    margin-left: 80vh;
 }
