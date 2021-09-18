@@ -15,6 +15,14 @@ body{
     
 }
 
+.ti{
+    color: white;
+    margin-top: 20vh;
+}
+.bb{
+    margin-left: 45%;
+
+}
   
 .front{
     background-image: url(./images/p4.png);
