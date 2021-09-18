@@ -27,11 +27,7 @@ const StudyRoom = () => {
                         </CopyToClipboard>
                         
                     </div>)
-<<<<<<< Updated upstream
-                    :(<h1 className="to">(No url generated)</h1>)
-=======
                     :(null)
->>>>>>> Stashed changes
             }
         </div>
     )
