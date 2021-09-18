@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import "./StudyRoom.css";
 import "./styles.css"
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import {Link} from "react-router-dom";
 var crypto = require("crypto");
 
 const StudyRoom = () => {
@@ -9,7 +10,7 @@ const StudyRoom = () => {
     const [copied, setCopied] = useState(false);
     const createURL = () => {
         var id = crypto.randomBytes(20).toString('hex');
-        seturl("localhost:3000/whiteboard/"+id)
+        seturl("/whiteboard/"+id)
     }
     return (
         <div className="tt">
@@ -18,7 +19,7 @@ const StudyRoom = () => {
             {
                 url ?
                     (<div tt>
-                        {url}
+                       <Link target="_blank" to={url}>Click here to go to your whiteboard</Link>
                         <CopyToClipboard
                             className="bb btn btn-primary"
                             text={url}
