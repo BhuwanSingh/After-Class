@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./bookpost.css";
 
-export default function Post({img}) {
+export default function Post({img,title,description,price,postedAt,category}) {
   return (
     <div className="post">
       <img
@@ -13,24 +13,24 @@ export default function Post({img}) {
         <div className="postCats">
           <span className="postCat">
             <Link className="link" to="/posts?cat=Music">
-        JEE
+        {category}
             </Link>
           </span>
        
         </div>
         <span className="postTitle">
           <Link to="/post/abc" className="link">
-            Lorem ipsum dolor sit amet
+          {title}
           </Link>
         </span>
         <hr />
-        <span className="postDate">1 hour ago</span>
+        <span className="postDate">{postedAt}</span>
       </div>
       <p className="postDesc">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-        officia architecto deserunt deleniti? Labore ipsum aspernatur magnam
-        fugiat, reprehenderit praesentium blanditiis quos cupiditate ratione
-        atque, exercitationem quibusdam, reiciendis odio laboriosam?
+       {description}
+      </p>
+       <p className="postDesc">
+        {price}
       </p>
     </div>
   );
