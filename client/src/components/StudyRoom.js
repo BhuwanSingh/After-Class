@@ -19,12 +19,12 @@ const StudyRoom = () => {
             {
                 url ?
                     (<div tt>
-                       <Link target="_blank" to={url}>Click here to go to your whiteboard</Link>
+                       <Link className="white_link" target="_blank" to={url}>Click here to go to your whiteboard</Link>
                         <CopyToClipboard
-                            className="bb btn btn-primary"
+                            className="ab btn btn-primary"
                             text={url}
                          onCopy={() => {setCopied(true)}}>
-                            {copied ?(<button style={{backgroundColor:"green"}}>Copied</button>): (<button>Copy</button>) }
+                            {copied ?(<button className="ab" style={{backgroundColor:"green"}}>Copied</button>): (<button>Copy</button>) }
                         </CopyToClipboard>
                         
                     </div>)
