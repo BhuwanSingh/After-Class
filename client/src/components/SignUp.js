@@ -27,7 +27,7 @@ export const SignUp = () => {
 		e.preventDefault();
 
 		const { name, email, phone, work, password, cpassword } = user;
-		const username = name
+		const username = name;
 		const res = await fetch("user/register", {
 			method: "POST",
 			headers: {
@@ -66,10 +66,10 @@ export const SignUp = () => {
 							<Link to="/login"> click here to LogIn</Link>
 						</div>
 					) : (
-						<div className="signup-form  d-flex flex-column align-items-center justify-content-center">
+						<div className="signup-form ">
 							<form method="POST" onSubmit={PostData}>
-								<div className="col ">
-									<h2 className="h3 mb-4 font-weight-normal">SignUp</h2>
+								<div className="col d-flex flex-column align-items-center justify-content-center">
+									<h2 className="h3 mb-3 font-weight-normal">SignUp</h2>
 									<div className="form-field">
 										<input
 											type="text"
@@ -142,7 +142,7 @@ export const SignUp = () => {
 										className="form-field"
 									>
 										<input
-											className="btn btn-lg btn-primary btn-block"
+											className="btn btn-lg btn-primary btn-block b1"
 											type="submit"
 											name="register"
 											id="register"
@@ -153,7 +153,7 @@ export const SignUp = () => {
 								</div>
 							</form>
 							<NavLink to="/login" className="signup-image-link">
-								I already have an account
+								Already have an account?
 							</NavLink>
 						</div>
 					)}

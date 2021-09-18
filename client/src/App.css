@@ -11,13 +11,13 @@ body {
 }
 .container {
 	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
 	margin-right: auto;
 	margin-left: auto;
 }
 .col {
-	width: 20rem;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -25,19 +25,59 @@ body {
 }
 .form-field {
 	width: 100%;
-	margin-bottom: 1rem;
+	margin-bottom: 0.7rem;
+
 }
 input {
 	padding: 0.5rem;
 	width: 100%;
 	background-color: #f2f2f2;
 }
-.signup-form {
+.login-form {
+	text-align: center;
+	box-shadow: 1.0rem 1.0rem .8rem #888888;
 	background-color: white;
+	height:73vh;
 	width: 30vw;
 	padding: 3rem;
-	margin: 2rem auto 5rem;
+	margin: 4rem auto 5rem;
 }
+
+.signup-form {
+	text-align: center;
+	box-shadow: 1.0rem 1.0rem .8rem #888888;
+	background-color: white;
+	height:73vh;
+	width: 30vw;
+	padding: 3rem;
+	margin: 4rem auto 5rem;
+}
+.b1{
+	margin-top: 1rem;
+	box-shadow:.5rem .5rem .3rem #888888;
+	margin-bottom: 1rem;
+}
+
+a{
+	font-size: 0.9rem;
+	text-decoration: none;
+} 
+
+  /* visited link */
+  a:visited {
+	color: rgb(37, 139, 37);
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: rgb(255, 93, 93);
+	text-decoration: underline;
+  }
+  
+  /* selected link */
+  a:active {
+	color: blue;
+  }
 img {
 	max-width: 100%;
 	height: auto;
