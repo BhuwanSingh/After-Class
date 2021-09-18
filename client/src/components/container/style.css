@@ -1,0 +1,30 @@
+.container-wb{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: linear-gradient(45deg,#03A9F4,#4CAF50);
+}
+
+.color-picker-container-wb{
+    text-align: center;
+    display: inline;
+    color: white;
+}
+
+.brushsize-container-wb{
+    display: inline;
+    color: white;
+    margin-left: 12px;
+}
+
+.tools-section-wb{
+    text-align: center;
+}
+
+.board-container-wb{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 1%;
+    background: white;
+}

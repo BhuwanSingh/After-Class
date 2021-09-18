@@ -15,6 +15,7 @@ import CAT from "./components/CAT";
 import CBSE from "./components/CBSE";
 import CLAT from "./components/CLAT";
 import IAS from "./components/IAS";
+import WhiteBoard from "./components/WhiteBoard";
 function App() {
 	return (
 		<div>
@@ -36,7 +37,8 @@ function App() {
 					<Route path="/SignUp" component={SignUp} />
 					<Route path="/StudyRoom" component={StudyRoom} />
 					<Route path="/Chat" component={Chat} />
-					
+					<Route path="/WhiteBoard" component={WhiteBoard} />
+
 				</Switch>
 			</Router>
 		</div>

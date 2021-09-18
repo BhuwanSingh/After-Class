@@ -74,6 +74,14 @@ io.on("connection", (socket) => {
         const socketId = users[data.receiver];
         io.to(socketId).emit("new_message", data);
     });
+
+    socket.on('canvas-data',(params,data)=>{
+        socket.join(params)
+        console.log("Joined:"+params)
+        // socket.broadcast.emit('canvas-data',data)
+        io.to(params).emit("canvas-data", data);
+    })
+
 });
 
 // app.listen(port, () => console.log(`Listening on port ${port}`));
