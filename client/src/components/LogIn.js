@@ -7,6 +7,7 @@ export const LogIn = ({setloggedin}) => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
+
 	const loginUser = async (e) => {
 		e.preventDefault();
 
@@ -28,9 +29,19 @@ export const LogIn = ({setloggedin}) => {
 			console.log("Invalid Credentials");
 		} else {
 			localStorage.setItem('email', email);
+
+			const res2 = await fetch(`/user/${localStorage.getItem('email')}`, {
+				method: "GET",
+			});
+			const data2 = await res2.json();
+			localStorage.setItem('username', data2[0].username);
+			console.log("username: "+localStorage.getItem('username'))
+			console.log("email: "+localStorage.getItem('email'))
 			window.alert("Successful Login");
 			console.log("Successful Login");
 			setloggedin(email);
+
+
 			history.push("/");
 		}
 	};
