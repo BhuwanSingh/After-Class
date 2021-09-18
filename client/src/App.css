@@ -196,7 +196,9 @@ li {
 .sub__menus {
 	position: absolute;
 	display: none;
-	background: #152d35;
+	backdrop-filter: drop-shadow(4px 4px 10px black);
+	backdrop-filter: blur(2px);
+	color: #152d35 !important;
 	width: 227px;
 	left: -17px;
 	padding: 2px 0 0 0;
@@ -346,6 +348,7 @@ input[type=submit]{
 		cursor: pointer;
 		position: relative;
 		z-index: 10037;
+		
 	}
 	.main-nav .menubar__button svg {
 		font-size: 27px;
@@ -373,6 +376,9 @@ input[type=submit]{
 		margin: 0 auto;
 		left: 0;
 		right: 0;
+	}
+	.sub__menus{
+		background-color: #d4ecdd;
 	}
 	.sub__menus__Active {
 		display: block !important;
