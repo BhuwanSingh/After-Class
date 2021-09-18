@@ -1,20 +1,19 @@
-import React, { Fragment, useState } from "react";
-import { useHistory } from "react-router-dom";
-import {NavLink} from "react-router-dom";
+import React, { Fragment, useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../img/default.png';
-export const LogIn = ({setloggedin}) => {
+export const LogIn = ({ setloggedin }) => {
 	const history = useHistory();
-	const [email, setEmail] = useState("");
-	const [password, setPassword] = useState("");
-
+	const [email, setEmail] = useState('');
+	const [password, setPassword] = useState('');
 
 	const loginUser = async (e) => {
 		e.preventDefault();
 
-		const res = await fetch("user/signin", {
-			method: "POST",
+		const res = await fetch('user/signin', {
+			method: 'POST',
 			headers: {
-				"Content-Type": "application/json",
+				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify({
 				email,
@@ -25,24 +24,20 @@ export const LogIn = ({setloggedin}) => {
 		const data = await res.json();
 
 		if (data.status === 400 || !data) {
-			window.alert("Invalid Credentials");
-			console.log("Invalid Credentials");
+			window.alert('Invalid Credentials');
+			console.log('Invalid Credentials');
 		} else {
 			localStorage.setItem('email', email);
-
 			const res2 = await fetch(`/user/${localStorage.getItem('email')}`, {
-				method: "GET",
+				method: 'GET',
 			});
 			const data2 = await res2.json();
 			localStorage.setItem('username', data2[0].username);
-			console.log("username: "+localStorage.getItem('username'))
-			console.log("email: "+localStorage.getItem('email'))
-			window.alert("Successful Login");
-			console.log("Successful Login");
+			// console.log('username: ' + localStorage.getItem('username'));
+			// console.log('email: ' + localStorage.getItem('email'));
+			// console.log('Successful Login');
 			setloggedin(email);
-
-
-			history.push("/");
+			if (localStorage.getItem('username')) history.push('/');
 		}
 	};
 
@@ -50,54 +45,54 @@ export const LogIn = ({setloggedin}) => {
 		<Fragment>
 			<section>
 				<div>
-					<div className="login-form">
-						<form method="POST" onSubmit={loginUser}>
-							<div className="col">
-							
-								<h2 className="h2__form ">Login</h2>
-								<div className="login-img" style={{padding: "1rem"}}><img src={logo} alt="loginbud" />
-								</div><div className="form-field">
+					<div className='login-form'>
+						<form method='POST' onSubmit={loginUser}>
+							<div className='col'>
+								<h2 className='h2__form '>Login</h2>
+								<div className='login-img' style={{ padding: '1rem' }}>
+									<img src={logo} alt='loginbud' />
+								</div>
+								<div className='form-field'>
 									<input
-										type="text"
-										name="email"
-										id="email"
-										autoComplete="off"
+										type='text'
+										name='email'
+										id='email'
+										autoComplete='off'
 										value={email}
 										onChange={(e) => {
 											setEmail(e.target.value);
 										}}
-										placeholder="Your Email"
+										placeholder='Your Email'
 									/>
 								</div>
-								<div className="form-field">
+								<div className='form-field'>
 									<input
-										type="password"
-										name="password"
-										id="password"
-										autoComplete="off"
+										type='password'
+										name='password'
+										id='password'
+										autoComplete='off'
 										value={password}
 										onChange={(e) => {
 											setPassword(e.target.value);
 										}}
-										placeholder="Your Password"
+										placeholder='Your Password'
 									/>
 								</div>
-								<div className="form-field d-flex justify-content-center">
+								<div className='form-field d-flex justify-content-center'>
 									<input
-										className="bts"
-										type="submit"
-										name="signin"
-										id="signin"
-										value="Sign In"
-										style={{ width: "50%" }}
+										className='bts'
+										type='submit'
+										name='signin'
+										id='signin'
+										value='Sign In'
+										style={{ width: '50%' }}
 									/>
 								</div>
 							</div>
-							
-						</form><NavLink to="/SignUp" className="signup-image-link">
-								New here? 
-							</NavLink>
-						
+						</form>
+						<NavLink to='/SignUp' className='signup-image-link'>
+							New here?
+						</NavLink>
 					</div>
 				</div>
 			</section>

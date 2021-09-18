@@ -6,6 +6,7 @@ import profilepic from './../../img/download.png';
 const Navbarmenu = () => {
 	const [isMenu, setisMenu] = useState(false);
 	const [isResponsiveclose, setResponsiveclose] = useState(false);
+	const [user, setuser] = useState(localStorage.getItem('username'));
 	const toggleClass = () => {
 		setisMenu(isMenu === false ? true : false);
 		setResponsiveclose(isResponsiveclose === false ? true : false);
@@ -16,10 +17,24 @@ const Navbarmenu = () => {
 	} else {
 		boxClass.push('');
 	}
+	// if (localStorage.getItem('username'))
+	// 	setUser(localStorage.getItem('username'));
+	// else setUser('');
 	const [isMenuSubMenu, setMenuSubMenu] = useState(false);
 	const toggleSubmenu = () => {
 		setMenuSubMenu(isMenuSubMenu === false ? true : false);
 	};
+	const singoutfunction = () => {
+		const logOutUser = async () => {
+			localStorage.clear();
+			const res = await fetch('user/signout', {
+				method: 'POST',
+			});
+		};
+
+		logOutUser();
+	};
+
 	let boxClassSubMenu = ['sub__menus'];
 	if (isMenuSubMenu) {
 		boxClassSubMenu.push('sub__menus__Active');
@@ -202,7 +217,7 @@ const Navbarmenu = () => {
 											</li>
 											<li>
 												<NavLink
-													onClick={toggleClass}
+													onClick={singoutfunction}
 													activeClassName='is-active'
 													to={`/`}
 												>
