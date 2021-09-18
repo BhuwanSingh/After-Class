@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { FiAlignRight, FiXCircle, FiChevronDown } from 'react-icons/fi';
 import logo from '../../img/logo.png';
-import profilepic from './../../img/download.png';
+
 const Navbarmenu = () => {
 	const [isMenu, setisMenu] = useState(false);
 	const [isResponsiveclose, setResponsiveclose] = useState(false);
-	const [user, setuser] = useState(localStorage.getItem('username'));
+
 	const toggleClass = () => {
 		setisMenu(isMenu === false ? true : false);
 		setResponsiveclose(isResponsiveclose === false ? true : false);
 	};
+
 	let boxClass = ['main-menu menu-right menuq1'];
 	if (isMenu) {
 		boxClass.push('menuq2');
