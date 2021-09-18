@@ -11,7 +11,7 @@
     color: #d4ecdd !important;
 }
 body{
-    background: repeating-linear-gradient(#152d35, #152d35 57.7%, #A7BBC7 50.1%,white 100%);
+    background: repeating-linear-gradient( #1a2238,  #1a2238 57.7%, #1a2238  50.1%,white 100%);
     
 }
 
@@ -37,7 +37,7 @@ body{
 }
 .back{
     background-color:#ff6a3d;
-    color: #152d35;
+    color:  #1a2238;
     border-radius: 10%;
     text-align: center;
     padding-top: 4vh;
@@ -59,7 +59,7 @@ body{
 .back2{
 
     background-color:#ff6a3d;
-    color: #152d35;
+    color:  #1a2238;
     border-radius: 10%;
     text-align: center;
     padding-top: 5vh;
@@ -80,7 +80,7 @@ body{
 }
 .back3{
     background-color:#9daaf2;
-    color: #152d35;
+    color:  #1a2238;
     border-radius: 50%;
     text-align: center;
     padding-top: 7vh;
@@ -103,7 +103,7 @@ body{
 }
 .back4{
     background-color:#9daaf2;
-    color: #152d35;
+    color:  #1a2238;
     border-radius: 10%;
     text-align: center;
     padding-top: 10vh;
@@ -124,7 +124,7 @@ body{
     text-align: center;
 }
 p{
-    color:#152d35;
+    color: #1a2238;
     font-size: 2vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: light;
