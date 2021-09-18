@@ -27,6 +27,7 @@ export const LogIn = ({setloggedin}) => {
 			window.alert("Invalid Credentials");
 			console.log("Invalid Credentials");
 		} else {
+			localStorage.setItem('email', email);
 			window.alert("Successful Login");
 			console.log("Successful Login");
 			setloggedin(email);
