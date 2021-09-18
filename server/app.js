@@ -38,7 +38,7 @@ mongoose
 
 //Linking router files
 app.use("/user", require("./router/user"));
-require('./router/routes')(app);
+app.use("/posts" , require("./router/posts"))
 
 app.get("/test_api", (req, res) => {
   res.json("just another test message");

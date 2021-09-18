@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import { useHistory } from "react-router-dom";
 import {NavLink} from "react-router-dom";
 import logo from '../img/default.png';
-export const LogIn = () => {
+export const LogIn = ({setloggedin}) => {
 	const history = useHistory();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
@@ -29,6 +29,7 @@ export const LogIn = () => {
 		} else {
 			window.alert("Successful Login");
 			console.log("Successful Login");
+			setloggedin(email);
 			history.push("/");
 		}
 	};

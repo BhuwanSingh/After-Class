@@ -15,17 +15,47 @@ body{
     
 }
 
-.tt{
-    color: white;
-    margin-top: 20vh;
+.whiteboard__con{
+    margin-top: 9rem;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-.ti{
-    color: white;
-    margin-top: 20vh;
+.whiteboard__title{
+    font-size:9vh;
+    color: #D5970F;
+    text-align: center;
 }
-.bb{
-    margin-left: 45%;
+
+.btn__whiteboard{
+    margin-top: 1.5rem;
+    padding:10px;
+}
+
+.to{
+    margin-top: 5rem;
+    
+}
+
+.tt{
+    margin-top: 5rem;
+text-align: left;
+margin-left: 5%;
+padding:0 1rem;
+font-style: italic;
+text-decoration: underline;
+font-weight:700;
+}
+
+.link-box{
+    padding: 0 3rem;
+}
+
+
+.btn__link{
+    margin-left:70% !important;
+    margin-top: -7vh !important;
+    padding: 5px 2rem;
 
 }
   
@@ -40,8 +70,9 @@ body{
     color:  #1a2238;
     border-radius: 10%;
     text-align: center;
-    padding-top: 2vh;
+    padding-top: 1.5vh;
     font-weight: bold;
+    font-size: 0.9rem;
 
 }
 .flippy2{
@@ -62,7 +93,7 @@ body{
     color:  #1a2238;
     border-radius: 10%;
     text-align: center;
-    padding-top: 3vh;
+    padding-top: 1vh;
     font-weight: bold;
 }
 .flippy3{
@@ -115,19 +146,23 @@ body{
 
  .my_h{
     color: #D5970F;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lato', 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 10vh;
     padding: 1vh;
     text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 3px;
 }
 .my_p{
     color: #1a2238 !important;
     font-size: 2vh;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-top: 5vh;
     font-weight: light;
     padding-left: 10vh;
     padding-right: 10vh;
- 
+    font-size:1.1rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 } 
