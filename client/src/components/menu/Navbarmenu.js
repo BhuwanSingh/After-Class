@@ -166,8 +166,18 @@ const Navbarmenu = () => {
 										Discuss{' '}
 									</NavLink>{' '}
 								</li>
-								{localStorage.getItem('email') ? (
-									<div>
+								{localStorage.getItem('email').length ? (
+									<li className='menu-item  '>
+										<NavLink
+											onClick={toggleClass}
+											activeClassName='is-active'
+											to={`/LogIn`}
+										>
+											{localStorage.getItem('email')}
+										</NavLink>{' '}
+									</li>
+								) : (
+									<>
 										<li className='menu-item  '>
 											<NavLink
 												onClick={toggleClass}
@@ -188,9 +198,7 @@ const Navbarmenu = () => {
 												Sign Up
 											</NavLink>{' '}
 										</li>
-									</div>
-								) : (
-									localStorage.getItem('username')
+									</>
 								)}{' '}
 							</ul>
 						</nav>
