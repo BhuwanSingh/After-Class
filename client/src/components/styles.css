@@ -15,6 +15,11 @@ body{
     
 }
 
+.tt{
+    color: white;
+    margin-top: 20vh;
+}
+
 .ti{
     color: white;
     margin-top: 20vh;
@@ -111,7 +116,7 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 10vh;
-    margin-top: -51vh;
+  
     padding: 1vh;
     text-align: center;
 }

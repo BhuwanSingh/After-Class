@@ -21,7 +21,12 @@ function App() {
 		<div>
 			<Router basename="/">
 				{/* Add Menu Component */}
-				<Navbarmenu />
+				{
+				window.location.pathname.match("/whiteboard")?
+				(null)
+				:(<Navbarmenu />)
+				}
+
 
 				<Switch>
 					<Route exact path="/" component={Home} />
