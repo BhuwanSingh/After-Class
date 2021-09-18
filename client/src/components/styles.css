@@ -11,7 +11,7 @@
     color: #d4ecdd !important;
 }
 body{
-    background: repeating-linear-gradient( #1a2238,  #1a2238 58.7%, #b5b8c0  50.1%,white 100%);
+    background: repeating-linear-gradient( #1a2238,  #1a2238 58.7%, #a2abc5  50.1%,white 100%);
     
 }
 
@@ -40,7 +40,7 @@ body{
     color:  #1a2238;
     border-radius: 10%;
     text-align: center;
-    padding-top: 4vh;
+    padding-top: 2vh;
     font-weight: bold;
 
 }
@@ -62,7 +62,7 @@ body{
     color:  #1a2238;
     border-radius: 10%;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 3vh;
     font-weight: bold;
 }
 .flippy3{
@@ -113,9 +113,7 @@ body{
 }
 
 
-/*----------------------------INTERRRUPTING WITH OTHER CHANGES USE CLASSNAME INSTEAD-----------------------------------*/
-
-/* h1{
+ .my_h{
     color: #ff6a3d;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -123,17 +121,13 @@ body{
     padding: 1vh;
     text-align: center;
 }
-p{
-    color: #1a2238;
+.my_p{
+    color: #1a2238 !important;
     font-size: 2vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 5vh;
     font-weight: light;
     padding-left: 10vh;
     padding-right: 10vh;
  
-} */
-.right{
-    
-    margin-left: 40%;
-    
-}
+} 

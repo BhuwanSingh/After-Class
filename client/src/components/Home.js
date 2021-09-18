@@ -14,9 +14,10 @@ function Home() {
 			<Flipcard2 />
 			<Flipcard3 />
 			<Flipcard4 />
-		</div>	<div className="righthome">
-				<h1>Let's Make Learning Fun!!!</h1>
-				<p>Ever wished for a place where you can ask doubts,download notes,sell older books,
+		</div>	
+		<div className="righthome">
+				<h1 className="my_h">Let's Make Learning Fun!!!</h1>
+				<p className="my_p">Ever wished for a place where you can ask doubts,download notes,sell older books,
 					do group study with friends etc all at one place. 
 					Don't worry <b>After Class</b> is the right website where you have landed.
 				</p>

@@ -6,6 +6,7 @@ const Authenticate = async (req, res, next) => {
     const token = req.cookies.jwtoken;
     const verifyToken = jwt.verify(token, process.env.SECRETKEY);
 
+    console.log(verifyToken);
     const rootUser = await User.findOne({
       _id: verifyToken._id,
       "tokens.token": token,
@@ -28,3 +29,4 @@ const Authenticate = async (req, res, next) => {
 };
 
 module.exports = Authenticate;
+
