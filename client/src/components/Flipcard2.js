@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 import { Link } from "react-router-dom";
 import "./styles.css";
-
 class Flipcard2 extends Component {
 	render() {
 		return (
