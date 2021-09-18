@@ -95,12 +95,12 @@ const MessagesControl = (props) => {
                             id="hidden-file"
                         />
                         <label htmlFor="hidden-file">
-                            <img width="20" src={attachment} alt={""} />
+                            <img  src={attachment} alt={""} />
                         </label>
                     </div>
                     <button>
                         <img src={sendIcon} />
-                        <span style={{ display: "inline-block" }}>Send</span>
+                        {/* <span style={{ display: "inline-block" }}>Send</span> */}
                     </button>
                 </form>
             </div>
