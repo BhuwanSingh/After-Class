@@ -66,6 +66,10 @@ exports.signIn = async (req, res) => {
   }
 };
 
+exports.signOut = async (req , res , next) => {
+  res.status(202).clearCookie('jwtoken').send("Logged out")
+}
+
 exports.listUsers = async (req, res, next) => {
   try {
     const { sortType = "-created" } = req.body;
