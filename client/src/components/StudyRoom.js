@@ -12,6 +12,7 @@ const StudyRoom = () => {
         var id = crypto.randomBytes(20).toString('hex');
         seturl("/whiteboard/"+id)
     }
+    let completeurl="localhost:3000"+url
     return (
         <div className="tt">
             <h1 className="ti">Create whiteboard</h1>
@@ -22,7 +23,7 @@ const StudyRoom = () => {
                        <Link className="white_link" target="_blank" to={url}>Click here to go to your whiteboard</Link>
                         <CopyToClipboard
                             className="ab btn btn-primary"
-                            text={url}
+                            text={completeurl}
                          onCopy={() => {setCopied(true)}}>
                             {copied ?(<button className="ab" style={{backgroundColor:"green"}}>Copied</button>): (<button>Copy</button>) }
                         </CopyToClipboard>
