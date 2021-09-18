@@ -11,7 +11,11 @@ const userSchema = new Schema({
   },
   exprerience: {
     type: Number,
-    default: 0
+    default: 0,
+  },
+  created: {
+    type: Date,
+    default: Date.now,
   },
   email: {
     type: String,
