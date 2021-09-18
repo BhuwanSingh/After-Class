@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Posts from "./posts/posts"
+import Posts from "./posts/Posts"
 
 
 const Doubt = () => {

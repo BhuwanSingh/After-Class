@@ -29,12 +29,26 @@ const port = process.env.PORT || 3001;
 
 const DB = process.env.DATABASE;
 const mongoose = require("mongoose");
+const multer = require("multer");
 mongoose
   .connect(DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => console.log("DB Connection Successful!"));
+
+  const storage = multer.diskStorage({
+    destination:(req , file , cb) => {
+      cb(null, "images")
+    },filename:(req , file , cb) => {
+      cb(null, req.body.name)
+    }
+  })
+
+const upload = multer({storage:storage});
+app.post("/api/upload" , upload.single("file") , (req, res) => {
+  res.status(200).json("File has been uploaded successfully")
+})
 
 //Linking router files
 app.use("/user", require("./router/user"));
