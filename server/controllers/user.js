@@ -66,6 +66,34 @@ exports.signIn = async (req, res) => {
   }
 };
 
-exports.about = (req, res) => {
-  res.json({ msg: "Hello" });
+exports.listUsers = async (req, res, next) => {
+  try {
+    const { sortType = "-created" } = req.body;
+    const users = await User.find().sort(sortType);
+    res.json(users);
+  } catch (error) {
+    next(error);
+  }
+};
+
+exports.search = async (req, res, next) => {
+  try {
+    const users = await User.find({
+      email: { $regex: req.params.search, $options: "i" },
+    });
+    console.log(users);
+    res.json(users);
+  } catch (error) {
+    next(error);
+  }
+};
+
+exports.find = async (req, res, next) => {
+  try {
+    const users = await User.findOne({ username: req.params.username });
+    console.log(users);
+    res.json(users);
+  } catch (error) {
+    next(error);
+  }
 };
