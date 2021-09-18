@@ -416,7 +416,7 @@ input[type=submit]{
 	align-items: center;
 }
 .chat-box{
-	width: 350px;
+	width: 35vw;
 	background: #fff;
 	border-radius: 10px;
 	box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.3);
@@ -435,10 +435,10 @@ input[type=submit]{
 	margin: 10px 0;
 }
 .input{
+	width:calc(100%-6.5rem);
 	border-radius: 5px;
 	border: 1px solid #eee;
 	outline: none;
-	width: 200px;
 	height: 25px;
 	font-size: 14px;
 	box-sizing: border-box;
@@ -497,7 +497,8 @@ input[type=submit]{
 	display: flex;
 }
 .message-control textarea{
-	width: 80%;
+	width:calc(100%-6.5rem);
+	flex:4;
 	border: none;
 	background: #eee;
 	resize: none;
@@ -510,6 +511,7 @@ input[type=submit]{
 .message-control button{
 	display: flex;
 	flex: 1;
+	width: 3.5rem;
 	justify-content: flex-end;
 	outline: none;
 	border: none;
@@ -571,6 +573,8 @@ input[type=submit]{
 }
 
 .file-input-container{
+	flex:1;
+	width: 3rem;
 	position: relative;
 }
 .file-input-container input[type="file"]{
@@ -617,6 +621,12 @@ input[type=submit]{
 	margin: 0 5px;
 	cursor: pointer;
 	color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 700px) {
+.chat-box{
+	width: 90vw;
+}	
 }
 
 /*===================================*/
