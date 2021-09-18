@@ -1,22 +1,24 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import Posts from "./posts/Posts";
 import axios from "axios";
-import Posts from "./posts/Posts"
+import { useLocation } from "react-router";
 
-
-const Doubt = () => {
+export default function Doubt() {
   const [posts, setPosts] = useState([]);
+  const { search } = useLocation();
+
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/api/posts");
-      //   console.log(res);
+      const res = await axios.get("/posts" + search);
       setPosts(res.data);
     };
     fetchPosts();
-  }, []);
-
-  return <div>
-		<Posts posts={posts} />
-	</div>;
-};
-
-export default Doubt;
+  }, [search]);
+  return (
+    <>
+      <div className="home">
+        <Posts posts={posts} />
+      </div>
+    </>
+  );
+}
