@@ -55,9 +55,9 @@ const Navbarmenu = () => {
                         </li>
                         <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Doubt`}> Discuss </NavLink> </li>
                         
-                        <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/LogIn`}> Log In </NavLink> </li>
+                        <li className="menu-item  " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/LogIn`}> Log In </NavLink> </li>
                    
-                             <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/SignUp`}> Sign Up</NavLink> </li> </ul>
+                             <li className="menu-item " ><NavLink className = "bts" onClick={toggleClass} activeClassName='is-active' to={`/SignUp`}> Sign Up</NavLink> </li> </ul>
                     </nav>     
                 </div>   
             </div>
