@@ -4,7 +4,7 @@ import Flipcard2 from "./Flipcard2";
 import Flipcard3 from "./Flipcard3";
 import Flipcard4 from "./Flipcard4";
 
-import "./styles.css"
+import "./styles.css";
 
 function Home() {
 	return (

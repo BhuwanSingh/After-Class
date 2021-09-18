@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import "./styles.css"
+import "./StudyRoom.css";
 var crypto = require("crypto");
 
 const StudyRoom = () => {
@@ -17,7 +17,7 @@ const StudyRoom = () => {
                     (<div tt>
                         {url}
                     </div>)
-                    :(<h1>no url generated</h1>)
+                    :(<h1 className="to">(No url generated)</h1>)
             }
         </div>
     )

@@ -1,0 +1,22 @@
+.ti{
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 9vh;
+    color:#df970f;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.to{
+    font-size: 3vh;
+    text-align: center;
+    color: #1a2238;
+    margin-top: 3vh;
+}
+
+.bb{
+    margin-left: 87vh;
+    margin-top: 4vh;
+    padding: 2vh;
+    font-size: 3vh;
+} 
+
