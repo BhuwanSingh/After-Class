@@ -3,13 +3,13 @@
     width:100vw;
     height:120vh;
     overflow: scroll;
-    background: linear-gradient(#8393be,white);
+    background: #27324e;
 }
 
 .color-picker-container-wb{
     text-align: center;
     display: inline;
-    color: #1a2238;
+    color: #ffffff;
     font-weight: bold;
     font-size: 3vh;
 }
@@ -17,7 +17,7 @@
 .brushsize-container-wb{
     text-align: center;
     display: inline;
-    color: #1a2238;
+    color: #f1eaea;
     font-weight: bold;
     font-size: 3vh;
     margin-left: 3vh;
@@ -32,17 +32,17 @@
     height: 120vh;
     margin: auto;
     margin-top: 1%;
-    background: white;
+    background: rgb(245, 243, 243);
 }
 .txt{
     font-family: 'Times New Roman', Times, serif;
-    color: #1a2238;
+    color: #f3e9e9;
     margin-left: 2%;
 }
 .tpt{
     font-size: 3vh;
     margin-left: 2.5%;
-    color: #1a2238;
+    color: #fdfcef;
     font-family: 'Times New Roman', Times, serif;
 }
 .bb{
