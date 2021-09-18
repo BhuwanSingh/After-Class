@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const Doubt = () => {
-    return (
-        <div>
-            discuss karlo
-        </div>
-    )
-}
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const res = await axios.get("/api/posts");
+    //   console.log(res);
+			setPosts(res.data)
+    };
+    fetchPosts();
+  }, []);
 
-export default Doubt
+  return <div>discuss karlo</div>;
+};
+
+export default Doubt;
