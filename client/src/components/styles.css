@@ -7,6 +7,9 @@
     width: 10rem;
     
 }
+.text-card{
+    color: #d4ecdd !important;
+}
 .front{
     background-image: url(./images/p4.png);
     background-repeat: no-repeat;
@@ -23,7 +26,6 @@
     width: 50%;
     height: 12rem;
     width: 12rem;
-    
 }
 .front2{
     background-image: url(./images/p1.png);

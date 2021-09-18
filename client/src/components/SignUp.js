@@ -155,6 +155,7 @@ export const SignUp = () => {
 							<NavLink to="/login" className="signup-image-link">
 								Already have an account?
 							</NavLink>
+							
 						</div>
 					)}
 				</div>

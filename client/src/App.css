@@ -65,13 +65,12 @@ a{
 
   /* visited link */
   a:visited {
-	color: rgb(37, 139, 37);
+	color: green;
   }
   
   /* mouse over link */
   a:hover {
 	color: rgb(255, 93, 93);
-	text-decoration: underline;
   }
   
   /* selected link */

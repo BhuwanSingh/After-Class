@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 class Flipcard3 extends Component {
@@ -15,7 +16,10 @@ class Flipcard3 extends Component {
 			 /// these are optional style, it is not necessary
 			>
 				<FrontSide className="front3"></FrontSide>
-				<BackSide className="back3">Worried about getting notes?</BackSide>
+				<Link to="/JEE" className="text-card">
+				<BackSide className="back3"> 
+				Worried about getting notes?</BackSide></Link>
+				
 			</Flippy>
 		);
 	}
