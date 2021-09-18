@@ -29,10 +29,7 @@ body {
 }
 .container {
 	width: 100%;
-	padding-right: 1.5rem;
-	padding-left: 1.5rem;
-	margin-right: auto;
-	margin-left: auto;
+    max-width: 1200px;
 }
 .col {
 	width: 100%;
@@ -115,10 +112,7 @@ img {
 	color: #07a8ff;
 	font-family: "Inter", sans-serif;
 }
-.navBar .logo img {
-	float: left;
-	max-height: 120px;
-}
+
 .is-active {
 	color: #d5970f !important;
 }
@@ -260,9 +254,7 @@ input[type=text],input[type=password],input[type=number]{
 	border-radius: 1px;
 	padding: 0.4rem;
 	margin-bottom: 0.3rem;
-	box-shadow: 0px 2px 1px  rgba(148, 148, 148, 0.774);
-	font-weight: 300;
-	
+	font-weight: 400;
 	
 }
 
@@ -279,18 +271,10 @@ input[type=submit]{
 .contact-us-page{
 	background-image: linear-gradient(to right bottom, rgb(73, 73, 73),rgb(0, 0, 0));
 	margin-top: 4rem;
+	height: 105vh;
+	margin-top: -2rem;
 }
 
-
-/* .creator__heading{
-
-
-	
-	background-image: linear-gradient(to right , rgb(255, 0, 34) , rgb(253, 230, 95));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-weight: 700;
-} */
 
  
 .creator__heading{
@@ -325,9 +309,9 @@ input[type=submit]{
 .creator__heading::after{
 	content: "";
 	display: block;
-	width:70%;
+	width:60%;
 	margin:0 auto;
-	border-bottom : 2px solid rgb(77, 77, 77);
+	border-bottom : 2px solid rgb(121, 120, 120);
 	margin-top: 3rem;
 }
 

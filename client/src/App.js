@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
@@ -19,7 +19,10 @@ import WhiteBoard from "./components/WhiteBoard";
 import Error404 from "./components/Pages/Error404"
 
 import Contactus from "./components/contactus";
+import Profile from "./components/Pages/Profile";
+
 function App() {
+  const [loggedin, setloggedin] = useState("")
 	return (
     <div>
       <Router basename="/">
@@ -36,12 +39,13 @@ function App() {
           <Route path="/CAT" component={CAT} />
           <Route path="/CBSE" component={CBSE} />
           <Route path="/IAS" component={IAS} />
-          <Route path="/LogIn" component={LogIn} />
+          <Route path="/LogIn" render={(props) => <LogIn setloggedin ={setloggedin} />} />
           <Route path="/SignUp" component={SignUp} />
           <Route path="/StudyRoom" component={StudyRoom} />
           <Route path="/Chat" component={Chat} />
           <Route path="/WhiteBoard" component={WhiteBoard} />
           <Route path="/ContactUs" component={Contactus} />
+                    <Route path="/Profile" render={(props) => <Profile loggedin ={loggedin} />} />
           <Route component={Error404} />
         </Switch>
 		</Router> 
