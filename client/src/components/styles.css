@@ -93,7 +93,7 @@ body{
     color: #152d35;
     border-radius: 10%;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 4vh;
     font-weight: 400;
     font-weight: bold;
 
@@ -103,9 +103,8 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 10vh;
-    margin-top: -46%;
-    padding: 2.6rem;
-    padding-bottom: 1rem;
+    margin-top: -51vh;
+    padding: 1vh;
     text-align: center;
 }
 p{
@@ -113,9 +112,8 @@ p{
     font-size: 2vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: light;
-    padding: 0rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 10vh;
+    padding-right: 10vh;
  
 }
 .right{
