@@ -1,4 +1,6 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react';
+import logo from "./../../img/download.png";
+import "./profile.css";
 let data
 
 const Profile = ({loggedin}) => {
@@ -37,18 +39,18 @@ const Profile = ({loggedin}) => {
   }, []);
 
     return (
-        <div style={{color:"white"}}>
-            <div>
-                <div>
-                    image
+        <div >
+            <div className="profile-container">
+                <div className="profile-image-container">
+                    <img src={logo} alt="img"/>
                     <div><h3>Created  </h3> {d.created}</div>
                 </div>
-                <div>
-                    <div><h3>Name</h3>{d.username}</div>
-                    <div><h3>Email</h3>{d.email}</div>
-                    <div><h3>Contact</h3>{d.phone}</div>
+                <div className="profile-details-container">
+                    <div className="profile-details-sub"><h3>Name</h3><h3>{d.username}</h3></div>
+                    <div className="profile-details-sub"><h3>Email</h3><h3>{d.email}</h3></div>
+                    <div className="profile-details-sub"><h3>Contact</h3><h3>{d.phone}</h3></div>
                     {/*<div><h3>Saved Post</h3>d.s</div>*/}
-                    <div><h3>Experience </h3>{d.experience}</div>
+                    <div className="profile-details-sub"><h3>Experience </h3><h3>{d.experience}</h3></div>
                 </div>
             </div>
         </div>
