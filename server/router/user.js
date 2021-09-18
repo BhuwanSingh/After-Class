@@ -6,6 +6,7 @@ const authenticate = require('../middleware/authenticate');
 router
   .post('/register', userController.register)
   .post('/signin', userController.signIn)
-  .get('/about',authenticate,userController.about)
+  .get('/:email',authenticate,userController.search)
+  .get('/:serach', userController.find);
 
 module.exports = router;
