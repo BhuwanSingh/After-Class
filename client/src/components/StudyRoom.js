@@ -14,7 +14,6 @@ const StudyRoom = () => {
     }
     let completeurl="localhost:3000"+url
     return (
-<<<<<<< HEAD
       <div className="whiteboard__con">
         <h1 className="whiteboard__title">Create whiteboard</h1>
         <button className="btn btn-primary btn__whiteboard" onClick={createURL}>
@@ -44,27 +43,6 @@ const StudyRoom = () => {
        
       </div>
     );
-=======
-        <div className="tt">
-            <h1 className="ti">Create whiteboard</h1>
-            <button className="bb btn btn-primary" onClick={createURL}>Create whiteboard</button>
-            {
-                url ?
-                    (<div tt>
-                       <Link className="white_link" target="_blank" to={url}>Click here to go to your whiteboard</Link>
-                        <CopyToClipboard
-                            className="ab btn btn-primary"
-                            text={completeurl}
-                         onCopy={() => {setCopied(true)}}>
-                            {copied ?(<button className="ab" style={{backgroundColor:"green"}}>Copied</button>): (<button>Copy</button>) }
-                        </CopyToClipboard>
-                        
-                    </div>)
-                    :(null)
-            }
-        </div>
-    )
->>>>>>> 977a92b3accf6ee71309e6ee3b31e00b425bc6ee
 }
 
 export default StudyRoom;
