@@ -111,12 +111,15 @@ body{
     font-weight: bold;
 
 }
-h1{
+
+
+/*----------------------------INTERRRUPTING WITH OTHER CHANGES USE CLASSNAME INSTEAD-----------------------------------*/
+
+/* h1{
     color: #ff6a3d;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 10vh;
-  
     padding: 1vh;
     text-align: center;
 }
@@ -128,7 +131,7 @@ p{
     padding-left: 10vh;
     padding-right: 10vh;
  
-}
+} */
 .right{
     
     margin-left: 40%;

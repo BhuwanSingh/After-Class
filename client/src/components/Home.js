@@ -3,10 +3,9 @@ import Flipcard from "./Flipcard";
 import Flipcard2 from "./Flipcard2";
 import Flipcard3 from "./Flipcard3";
 import Flipcard4 from "./Flipcard4";
-import Contactus from "./contactus";
-import Error404 from "./error404";
+
 import "./styles.css"
-import Contactus from "./contactus";
+
 function Home() {
 	return (
 		<div >
@@ -15,7 +14,6 @@ function Home() {
 			<Flipcard2 />
 			<Flipcard3 />
 			<Flipcard4 />
-<<<<<<< Updated upstream
 			<div className="right">
 				<h1>Let's Make Learning Fun!!!</h1>
 				<p>Ever wished for a place where you can ask doubts,download notes,sell older books,
@@ -24,11 +22,9 @@ function Home() {
 				</p>
 			</div>
 			</div>
+
 			
 			
-=======
-<Contactus></Contactus>
->>>>>>> Stashed changes
 		</div>
 	);
 }

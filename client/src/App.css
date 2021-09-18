@@ -261,7 +261,7 @@ input[type=submit]{
 /*---------------------------------------ContactUs page CSS--------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------*/
 .contact-us-page{
-	background-image: linear-gradient(to right bottom, rgba(53, 53, 53, 0.925),rgb(10, 10, 10));
+	background-image: linear-gradient(to right bottom, rgb(73, 73, 73),rgb(0, 0, 0));
 	margin-top: 4rem;
 }
 
@@ -292,7 +292,6 @@ input[type=submit]{
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
