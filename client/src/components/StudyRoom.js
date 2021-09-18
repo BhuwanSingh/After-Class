@@ -12,29 +12,35 @@ const StudyRoom = () => {
         seturl("localhost:3000/whiteboard/"+id)
     }
     return (
-        <div className="tt">
-            <h1 className="ti">Create whiteboard</h1>
-            <button className="bb btn btn-primary" onClick={createURL}>Create whiteboard</button>
-            {
-                url ?
-                    (<div tt>
-                        {url}
-                        <CopyToClipboard
-                            className="bb btn btn-primary"
-                            text={url}
-                         onCopy={() => {setCopied(true)}}>
-                            {copied ?(<button style={{backgroundColor:"green"}}>Copied</button>): (<button>Copy</button>) }
-                        </CopyToClipboard>
-                        
-                    </div>)
-<<<<<<< Updated upstream
-                    :(<h1 className="to">(No url generated)</h1>)
-=======
-                    :(null)
->>>>>>> Stashed changes
-            }
-        </div>
-    )
+      <div className="whiteboard__con">
+        <h1 className="whiteboard__title">Create whiteboard</h1>
+        <button className="btn btn-primary btn__whiteboard" onClick={createURL}>
+          Create whiteboard
+        </button>
+        
+          {url ? (
+            <div className="tt">
+              {url}
+              <CopyToClipboard
+                className="btn btn-primary btn__link"
+                text={url}
+                onCopy={() => {
+                  setCopied(true);
+                }}
+              >
+                {copied ? (
+                  <button style={{ backgroundColor: "green" }}>Copied</button>
+                ) : (
+                  <button>Copy</button>
+                )}
+              </CopyToClipboard>
+            </div>
+          ) : (
+            <h1 className="to">(No url generated)</h1>
+          )}
+       
+      </div>
+    );
 }
 
 export default StudyRoom;
