@@ -8,13 +8,13 @@ import "./styles.css"
 
 function Home() {
 	return (
-		<div >
-			<div>
-			<Flipcard />
+		<div  >
+			<div className="homehead">
+			<div className="lefthome"><Flipcard />
 			<Flipcard2 />
 			<Flipcard3 />
 			<Flipcard4 />
-			<div className="right">
+		</div>	<div className="righthome">
 				<h1>Let's Make Learning Fun!!!</h1>
 				<p>Ever wished for a place where you can ask doubts,download notes,sell older books,
 					do group study with friends etc all at one place. 
