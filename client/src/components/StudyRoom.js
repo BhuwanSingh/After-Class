@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import "./StudyRoom.css";
-import "./styles.css"
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import {Link} from "react-router-dom";
 var crypto = require("crypto");

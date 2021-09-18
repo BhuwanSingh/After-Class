@@ -1,6 +1,10 @@
 import React from 'react'
 import Board from '../board/Board'
 import './style.css'
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+import {Link} from "react-router-dom";
+
+
 
 class Container extends React.Component{
 
@@ -30,6 +34,9 @@ class Container extends React.Component{
     }
 
     render(){
+        const url = window.location.href
+
+  
         return(
             <div className="container-wb">
                 <div className='tools-section-wb'>
@@ -57,8 +64,16 @@ class Container extends React.Component{
                     </div>
                 </div>
                 <div>
-                    <h2>Want to invite more friends?</h2>
-                    <h3>Tell them to join : localhost:3000{window.location.pathname}</h3>
+                    
+                    <h2 className="txt">Want to invite more friends?</h2>
+                    <h3 className="tpt">Tell them to join : <span> </span>
+                    <CopyToClipboard text={url}>
+                    <button className="btn btn-primary">Copy URL to the clipboard</button>
+                    </CopyToClipboard>
+                    </h3>
+                       
+                    
+                    
                 </div>
                 <div className="board-container-wb">
                     <Board color={this.state.color} size={this.state.size} ></Board>
