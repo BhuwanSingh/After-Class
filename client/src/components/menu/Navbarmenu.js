@@ -48,6 +48,11 @@ const Navbarmenu = () => {
                             <ul className={boxClassSubMenu.join(' ')} id="submenu_button" > 
                                 <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/JEE`}> JEE </NavLink> </li>
                                 <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/NEET`}> NEET </NavLink> </li>
+                                <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/CAT`}> CAT </NavLink> </li>
+                                <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/BTech`}> BTech </NavLink> </li>
+                                <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/CBSE`}> CBSE </NavLink> </li>
+                                <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/IAS`}> IAS </NavLink> </li>
+                                <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/CLAT`}> CLAT </NavLink> </li>
                             </ul>
                         </li>
                         <li  className="menu-item" >

@@ -11,7 +11,11 @@ const userSchema = new Schema({
   },
   exprerience: {
     type: Number,
-    default: 0
+    default: 0,
+  },
+  created: {
+    type: Date,
+    default: Date.now,
   },
   email: {
     type: String,
@@ -62,6 +66,15 @@ userSchema.methods.generateAuthToken = async function () {
   } catch (err) {
     console.log(err);
   }
+};
+
+userSchema.set("toJSON", { getters: true });
+userSchema.options.toJSON.transform = (doc, ret) => {
+  const obj = { ...ret };
+  delete obj._id;
+  delete obj.__v;
+  delete obj.password;
+  return obj;
 };
 
 const User = mongoose.model("USER", userSchema);
