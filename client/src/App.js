@@ -17,6 +17,7 @@ import CLAT from "./components/CLAT";
 import IAS from "./components/IAS";
 import WhiteBoard from "./components/WhiteBoard";
 import Error404 from "./components/Pages/Error404"
+
 import Contactus from "./components/contactus";
 function App() {
 	return (
@@ -43,7 +44,8 @@ function App() {
           <Route path="/ContactUs" component={Contactus} />
           <Route component={Error404} />
         </Switch>
-      </Router>
+		</Router> 
+
     </div>
   );
 }

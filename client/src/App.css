@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet ');
+:root{
+	--dark: #1a2238;
+}
+.homehead{
+	display: flex;
+	flex-direction: row;
+}
+.lefthome{
+	flex:1;
+
+}
+.righthome{
+	color:white;
+flex:1;
+}
 body {
 	background-color: #d4ecdd;
 	height: 100vh;
@@ -163,7 +178,7 @@ li {
 .header__middle {
 	display: flex;
 	margin-top: 0;
-	background-color: #152d35;
+	background-color:  #1a2238;
 	border-bottom: 1px black;
 	position: relative;
 }
@@ -198,7 +213,7 @@ li {
 	display: none;
 	backdrop-filter: drop-shadow(4px 4px 10px black);
 	backdrop-filter: blur(2px);
-	color: #152d35 !important;
+	color:  #1a2238 !important;
 	width: 227px;
 	left: -17px;
 	padding: 2px 0 0 0;
