@@ -16,6 +16,7 @@ import CBSE from "./components/CBSE";
 import CLAT from "./components/CLAT";
 import IAS from "./components/IAS";
 import WhiteBoard from "./components/WhiteBoard";
+import Error404 from "./components/Error404"
 function App() {
 	return (
 		<div>
@@ -43,6 +44,7 @@ function App() {
 					<Route path="/StudyRoom" component={StudyRoom} />
 					<Route path="/Chat" component={Chat} />
 					<Route path="/WhiteBoard" component={WhiteBoard} />
+					<Route component={Error404}/>
 
 				</Switch>
 			</Router>
