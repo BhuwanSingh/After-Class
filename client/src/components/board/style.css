@@ -1,9 +1,11 @@
 .board-wb{
-    width:100%;
-    height: 100%;
+    width:100vw;
+    height: 120vh;
+    overflow: scroll;
 }
 
 .sketch-wb{
-    width: 100%;
-    height: 100%;
+    width: 90vw;
+    height: 120vh;
+    
 }

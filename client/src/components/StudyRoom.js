@@ -59,6 +59,7 @@ const StudyRoom = () => {
                             {copied ?(<button className="ab" style={{backgroundColor:"green"}}>Copied</button>): (<button>Copy</button>) }
                         </CopyToClipboard>
                         
+                        
                     </div>)
                     :(null)
             }
