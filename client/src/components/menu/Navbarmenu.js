@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { FiAlignRight, FiXCircle, FiChevronDown } from 'react-icons/fi';
 import logo from '../../img/logo.png';
+import profilepic from './../../img/download.png';
 const Navbarmenu = () => {
 	const [isMenu, setisMenu] = useState(false);
 	const [isResponsiveclose, setResponsiveclose] = useState(false);
@@ -166,15 +167,49 @@ const Navbarmenu = () => {
 										Discuss{' '}
 									</NavLink>{' '}
 								</li>
-								{localStorage.getItem('email').length ? (
-									<li className='menu-item  '>
-										<NavLink
-											onClick={toggleClass}
-											activeClassName='is-active'
-											to={`/LogIn`}
+								{localStorage.getItem('username') ? (
+									<li
+										onClick={toggleSubmenu}
+										className='menu-item sub__menus__arrows'
+									>
+										{' '}
+										<Link to='#'>
+											{localStorage.getItem('username')}
+											<FiChevronDown />{' '}
+										</Link>
+										<ul
+											className={boxClassSubMenu.join(' ')}
+											id='submenu_button'
 										>
-											{localStorage.getItem('email')}
-										</NavLink>{' '}
+											<li>
+												{' '}
+												<NavLink
+													onClick={toggleClass}
+													activeClassName='is-active'
+													to={`/profile`}
+												>
+													My Profile
+												</NavLink>{' '}
+											</li>
+											<li>
+												<NavLink
+													onClick={toggleClass}
+													activeClassName='is-active'
+													to={`/chat`}
+												>
+													Chat
+												</NavLink>{' '}
+											</li>
+											<li>
+												<NavLink
+													onClick={toggleClass}
+													activeClassName='is-active'
+													to={`/`}
+												>
+													LogOut
+												</NavLink>{' '}
+											</li>
+										</ul>
 									</li>
 								) : (
 									<>
