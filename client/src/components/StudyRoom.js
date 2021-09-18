@@ -1,10 +1,7 @@
 import React, {useState} from 'react'
-<<<<<<< Updated upstream
 import "./StudyRoom.css";
-=======
 import "./styles.css"
 import {CopyToClipboard} from 'react-copy-to-clipboard';
->>>>>>> Stashed changes
 var crypto = require("crypto");
 
 const StudyRoom = () => {
