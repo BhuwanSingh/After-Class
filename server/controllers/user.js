@@ -66,6 +66,10 @@ exports.signIn = async (req, res) => {
   }
 };
 
+exports.signOut = async (req , res , next) => {
+  res.status(202).clearCookie('jwtoken').send("Logged out")
+}
+
 exports.listUsers = async (req, res, next) => {
   try {
     const { sortType = "-created" } = req.body;
@@ -78,13 +82,10 @@ exports.listUsers = async (req, res, next) => {
 
 exports.search = async (req, res, next) => {
   try {
-    console.log(req.params.email);
+    // console.log(req.params.email);
     const users = await User.find({
       email: { $regex: req.params.email, $options: "i" },
     });
-    // const users = await User.find({
-    //   email
-    // });
     console.log(users);
     res.json(users);
   } catch (error) {
