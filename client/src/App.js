@@ -9,7 +9,12 @@ import LogIn from "./components/LogIn";
 import Navbarmenu from "./components/menu/Navbarmenu";
 import StudyRoom from "./components/StudyRoom";
 import SignUp from "./components/SignUp";
-import MyChats  from "./components/MyChats"
+import Chat  from "./components/Chat"
+import BTech from "./components/BTech";
+import CAT from "./components/CAT";
+import CBSE from "./components/CBSE";
+import CLAT from "./components/CLAT";
+import IAS from "./components/IAS";
 function App() {
 	return (
 		<div>
@@ -22,10 +27,15 @@ function App() {
 					<Route path="/Doubt" component={Doubt} />
 					<Route path="/NEET" component={NEET} />
 					<Route path="/JEE" component={JEE} />
+					<Route path="/BTech" component={BTech} />
+					<Route path="/CLAT" component={CLAT} />
+					<Route path="/CAT" component={CAT} />
+					<Route path="/CBSE" component={CBSE} />
+					<Route path="/IAS" component={IAS} />
 					<Route path="/LogIn" component={LogIn} />
 					<Route path="/SignUp" component={SignUp} />
 					<Route path="/StudyRoom" component={StudyRoom} />
-					<Route path="/Chat" component={MyChats} />
+					<Route path="/Chat" component={Chat} />
 					
 				</Switch>
 			</Router>

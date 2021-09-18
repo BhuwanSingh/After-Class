@@ -37,11 +37,11 @@ export const LogIn = () => {
 		<Fragment>
 			<section>
 				<div>
-					<div className="signup-form ">
+					<div className="login-form">
 						<form method="POST" onSubmit={loginUser}>
 							<div className="col">
 							
-								<h2 className="h3 mb-3 font-weight-normal">Login</h2>
+								<h2 className="h2__form ">Login</h2>
 								<div className="login-img" style={{padding: "1rem"}}><img src={logo} alt="loginbud" />
 								</div><div className="form-field">
 									<input
@@ -71,7 +71,7 @@ export const LogIn = () => {
 								</div>
 								<div className="form-field d-flex justify-content-center">
 									<input
-										className="btn btn-lg btn-primary btn-block"
+										className="bts"
 										type="submit"
 										name="signin"
 										id="signin"
@@ -81,7 +81,7 @@ export const LogIn = () => {
 								</div>
 							</div>
 							
-						</form><NavLink to="/Sign Up" className="signup-image-link">
+						</form><NavLink to="/SignUp" className="signup-image-link">
 								New here? 
 							</NavLink>
 						

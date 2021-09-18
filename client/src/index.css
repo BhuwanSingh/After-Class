@@ -19,3 +19,35 @@
     text-decoration:none;
     outline:none;
   }
+
+  /*================*/
+/*CHAT APP CSS*/
+.bgColor{
+    background: #ffe290;
+}
+.primaryColor{
+    color: #4a5a6e;
+}
+.b-200{
+    font-weight: 200;
+}
+.b-300{
+    font-weight: 300;
+}
+
+.b-400{
+    font-weight: 400;
+}
+
+.b-500{
+    font-weight: 500;
+}
+.b-600{
+    font-weight: 600;
+}
+.b-700{
+    font-weight: 700;
+}
+
+/*=======================*/
+/*CHAT APP CSS END*/
