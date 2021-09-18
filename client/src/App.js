@@ -15,12 +15,19 @@ import CAT from "./components/CAT";
 import CBSE from "./components/CBSE";
 import CLAT from "./components/CLAT";
 import IAS from "./components/IAS";
+import WhiteBoard from "./components/WhiteBoard";
+import Error404 from "./components/Error404"
 function App() {
 	return (
 		<div>
 			<Router basename="/">
 				{/* Add Menu Component */}
-				<Navbarmenu />
+				{
+				window.location.pathname.match("/whiteboard")?
+				(null)
+				:(<Navbarmenu />)
+				}
+
 
 				<Switch>
 					<Route exact path="/" component={Home} />
@@ -36,7 +43,9 @@ function App() {
 					<Route path="/SignUp" component={SignUp} />
 					<Route path="/StudyRoom" component={StudyRoom} />
 					<Route path="/Chat" component={Chat} />
-					
+					<Route path="/WhiteBoard" component={WhiteBoard} />
+					<Route component={Error404}/>
+
 				</Switch>
 			</Router>
 		</div>
