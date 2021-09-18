@@ -152,7 +152,7 @@ export const SignUp = () => {
                   </div>
                 </div>
               </form>
-              <NavLink to="/login" className="signup-image-link mt-10">
+              <NavLink to="/login" className="signup-image-link ">
                 Already have an account?
               </NavLink>
             </div>

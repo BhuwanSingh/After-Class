@@ -62,23 +62,23 @@ input {
 	margin-bottom: 1rem;
 }
 
-a{
+.signup-image-link{
 	font-size: 0.9rem;
 	text-decoration: none;
 } 
 
   /* visited link */
-  a:visited {
+  .signup-image-link:visited {
 	color: green;
   }
   
   /* mouse over link */
-  a:hover {
+  .signup-image-link:hover {
 	color: rgb(255, 93, 93);
   }
   
   /* selected link */
-  a:active {
+ .signup-image-link:active {
 	color: blue;
   }
 img {
@@ -206,16 +206,16 @@ li {
 
 
 .bts{
- margin-top: 0.75rem !important;
- padding-top:0.5rem !important;
+ margin-top: 0.75rem ;
+ padding-top:0.5rem ;
  padding-bottom: 0.5rem;
  padding-right: 1.1rem;
  padding-left: 1.1rem;
 
  background-color:#0d6efd;
- color:#fff !important;
+ color:#fff ;
  border-radius: 2.5rem;
- transition: all 0.4s !important;
+ transition: all 0.4s ;
 } 
 
  .bts:hover{
@@ -258,21 +258,77 @@ input[type=submit]{
 
 /*---------------------------------------ContactUs page CSS--------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------*/
+.contact-us-page{
+	background-image: linear-gradient(to right bottom, rgba(53, 53, 53, 0.925),rgb(10, 10, 10));
+	margin-top: 4rem;
+}
 
+
+/* .creator__heading{
+
+
+	
+	background-image: linear-gradient(to right , rgb(255, 0, 34) , rgb(253, 230, 95));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 700;
+} */
+
+ 
 .creator__heading{
-	margin: 0 auto;
+  	margin: 0 auto;
 	padding : 3rem;
-	text-align:center;
+	text-align: center;
+  color: #ffffff;
+  background: linear-gradient(to right, #6e6e6e 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@keyframes shine{
+  0% {
+  background-position: 0;}
+  60% {
+    background-position: 36rem;}
+  100%{
+    background-position: 53rem;}
 }
 
 .creator__heading::after{
-	content: '';
-	border-bottom:2px solid black;
+	content: "";
+	display: block;
+	width:70%;
+	margin:0 auto;
+	border-bottom : 2px solid rgb(77, 77, 77);
+	margin-top: 3rem;
 }
 
 .creator__row{
-	width:100%;
+	width:90%;
+	margin: 2rem auto;
+	color:rgb(223, 221, 221);
+	padding-bottom: 3rem;
+	
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 
 .creator__small-box{
 	float:left;
@@ -280,6 +336,86 @@ input[type=submit]{
 }
 
 
+.creator__card{
+	margin:0 auto;
+	width:85%;
+	padding: 5px 5px;
+	text-align: center;
+	overflow-wrap: break-word;
+	background-image: linear-gradient(to right bottom,rgba(51, 51, 51, 0.692),rgba(73, 73, 73, 0.74));
+	border-radius: 5px;
+	box-shadow:4px 4px 4px rgba(0, 0, 0, 0.918) ;
+	transition: all 0.4s;
+}
+
+.creator__card:hover{
+	transform: scale(1.04);
+	box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.918);
+	
+}
+
+.creator__image{
+	height:10rem;
+	width:10rem;
+	border-radius: 50%;
+}
+
+.creator_name{
+	padding: 0.6rem;
+	text-align: center;
+	margin-bottom: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+	color:#d3c11d;
+	font-size: 1rem;
+}
+
+.creator_info{
+	text-align: center;
+	margin-bottom: 1rem auto;
+}
+
+
+.bts__small{
+display:block;
+ padding-top:0.3rem ;
+ padding-bottom: 0.3rem;
+ padding-right: 0.3rem;
+ padding-left: 0.3rem;
+ background-color:#000000;
+ color:#eee ;
+ border-radius: 2.5rem;
+ transition: all 0.4s ;
+ margin-top: 1rem;
+ width:70%;
+ margin : 1rem auto;
+ box-shadow: 0 1px 2px black;
+} 
+
+ .bts__small:hover{
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 0.5rem rgba(39, 39, 39, 0.842);
+  background-color: #6b6b6b;
+  color:#fff;
+}
+
+.bts__small:active{
+  transform: translateY(0);
+  box-shadow: 1px 2px 5px rgba(41, 41, 41, 0.842);
+} 
+
+
+
+/*-----------------------------------------------------ERROR 404 CSS----------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------*/
+
+.Error{
+
+	position: absolute;
+	top:60%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	
+}
 
 
 
@@ -621,3 +757,16 @@ input[type=submit]{
 
 /*===================================*/
 /*CHAT APP CSS END*/
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------ANIMATION--------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------*/
+
+
+
