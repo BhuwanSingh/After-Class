@@ -16,7 +16,7 @@ function Contactus() {
 						<img src={Bhuwan} alt='creator-photo' className='creator__image' />
 						<p className='creator_name'>Bhuwan Singh</p>
 						<p className='creator_info'>Back-End Developer</p>
-						<a href='#' className='bts__small'>
+						<a href='https://github.com/BhuwanSingh' className='bts__small'>
 							Link to Github
 						</a>
 						<a href='#' className='bts__small'>
@@ -48,7 +48,7 @@ function Contactus() {
 						/>
 						<p className='creator_name'>Shrishesh Pratik</p>
 						<p className='creator_info'>Back-End Developer</p>
-						<a href='#' className='bts__small'>
+						<a href='' className='bts__small'>
 							Link to Github
 						</a>
 						<a href='#' className='bts__small'>
