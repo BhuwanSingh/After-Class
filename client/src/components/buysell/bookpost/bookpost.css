@@ -1,20 +1,24 @@
 .post {
-	width: 385px;
+	width: 22rem;
 	margin: 0px 25px 40px 25px;
 	display: flex;
 	flex-direction: column;
+	background: lightgray;
+	padding: 0.1rem;
 }
 
 .postImg {
-	width: 385px;
-	height: 280px;
+	width: 22rem;
+	height: 15rem;
 	object-fit: contain;
 	border-radius: 7px;
+	align-items: center;
 }
 
 .postInfo {
 	display: flex;
 	flex-direction: column;
+	height: 30vh;
 }
 .postCon {
 	text-align: center;
