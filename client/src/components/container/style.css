@@ -14,6 +14,8 @@
 	font-size: 3vh;
 }
 .colorselectinput {
+	margin-left: 1rem;
+	margin-right: 2rem;
 	width: 3rem;
 }
 .brushsize-container-wb {
@@ -37,16 +39,28 @@
 	background: rgb(245, 243, 243);
 }
 .txt {
-	font-family: 'Times New Roman', Times, serif;
+	font-family:'Lato','Times New Roman', Times, serif;
 	color: #f3e9e9;
 	margin-left: 2%;
+	font-size: 1.5rem ;
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
 }
 .tpt {
-	font-size: 3vh;
+	font-size: 2.7vh;
 	margin-left: 2.5%;
 	color: #fdfcef;
-	font-family: 'Times New Roman', Times, serif;
+	font-family:'Lato','Times New Roman', Times, serif;
 }
 .bb {
 	margin-left: 80vh;
+}
+
+
+.bkl{
+	margin-left: 1.5rem;
+}
+
+.sel{
+	margin-left: 1.5rem;
 }

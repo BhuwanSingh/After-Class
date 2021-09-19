@@ -44,12 +44,12 @@ const Navbarmenu = () => {
 	}
 	return (
 		<header className='header__middle'>
-			<div className='container'>
-				<div className='row'>
+			<div className='header__control'>
+
 					{/* Add Logo  */}
 					<div className='header__middle__logo'>
 						<NavLink exact activeClassName='is-active' to='/'>
-							<img src={logo} alt='logo' />
+							<img className="img__logo" src={logo} alt='logo' />
 						</NavLink>
 					</div>
 					<div className='header__middle__menus'>
@@ -254,7 +254,7 @@ const Navbarmenu = () => {
 							</ul>
 						</nav>
 					</div>
-				</div>
+				
 			</div>
 		</header>
 	);

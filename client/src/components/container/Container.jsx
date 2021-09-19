@@ -47,7 +47,7 @@ class Container extends React.Component {
 						onChange={this.changeSize.bind(this)}
 					>
 						Select Brush Size:
-						<select value={this.state.size}>
+						<select className="sel" value={this.state.size}>
 							<option>1</option>
 							<option>2</option>
 							<option>3</option>
@@ -68,7 +68,7 @@ class Container extends React.Component {
 					<h3 className='tpt'>
 						Tell them to join : <span> </span>
 						<CopyToClipboard text={url}>
-							<button className='btn btn-primary'>
+							<button className='btn btn-primary bkl'>
 								Copy URL to the clipboard
 							</button>
 						</CopyToClipboard>

@@ -43,7 +43,7 @@ const Profile = ({loggedin}) => {
             <div className="profile-container">
                 <div className="profile-image-container">
                     <img src={logo} alt="img"/>
-                    <div><h3> Created  </h3> d.created </div>
+                    <div><h3> Created  </h3> {d.created} </div>
                 </div>
                 <div className="profile-details-container">
                     <div className="profile-details-sub"><h3>Name</h3><h3>{d.username}</h3></div>
