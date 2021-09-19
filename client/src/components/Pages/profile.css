@@ -81,4 +81,5 @@
 .profile-details-sub1 p,
 .profile-details-sub p {
 	margin: 0;
+	display: inline-block;
 }
