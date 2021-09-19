@@ -176,6 +176,7 @@ li {
 	height: auto;
 }
 
+
 .header__middle__menus {
 	width: 63%;
 	display: inline-block;
@@ -291,7 +292,7 @@ input[type='submit'] {
 	);
 	margin-top: 4rem;
 	height: 105vh;
-	margin-top: -2rem;
+
 }
 
 .creator__heading {
