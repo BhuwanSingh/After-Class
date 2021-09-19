@@ -14,7 +14,7 @@ export default function Posts() {
 			/>
 			<BookPost
 				img='https://apollo-singapore.akamaized.net/v1/files/pvpwkjplsyo7-IN/image;s=780x0;q=60'
-				title='Aakash Package for NEET'
+				title='Aakash Package for NEET + Questions'
 				description='This set contains package provided by Aakash Institute along with that it has complete modules with Allen question papers. Study packages at Aakash Institute help in both board exams and entrance exams. The test papers were nice because they had a lot of questions which were tough'
 				contact='8569717856'
 				price='₹ 2000'
@@ -34,7 +34,7 @@ export default function Posts() {
 				img='https://apollo-singapore.akamaized.net/v1/files/o7b8on6v4gm53-IN/image;s=780x0;q=60'
 				title='CAT ENTRANCE BOOKS BY TIME INSTITUTE'
 				description='The complete package is providing all the basics of three sections.And there are more than sufficient questions here with detailed solution.. And it covers not only CAT syllabus also other MBA exams are covered here. Great books package. Abridged and to the point. A good material for basics.'
-				contact = '7895242039'
+				contact='7895242039'
 				price='₹ 3000'
 				postedAt='10 September 2021'
 				category=''
@@ -43,7 +43,7 @@ export default function Posts() {
 				img='https://apollo-singapore.akamaized.net/v1/files/8j8o4v31lgsu2-IN/image;s=780x0;q=60'
 				title='Lucents General Knowledge Book'
 				description='-Best book ever for(geography, history, economics, polity)this book is best. Not for general science. I think general science go for arihant general science encyclopaedia. In Lucent publication reduce the mistakes in this year. This is the best book go for it. This covers all the topics'
-				contact = '9852172040'
+				contact='9852172040'
 				price='₹ 140'
 				postedAt=' 13 September 2021'
 				category=''
