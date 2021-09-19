@@ -222,6 +222,16 @@ const Navbarmenu = () => {
 												</NavLink>{" "}
 											</li>{" "}
 											<li>
+												{' '}
+												<NavLink
+													onClick={toggleClass}
+													activeClassName='is-active'
+													to={`/write`}
+												>
+													Write Post
+												</NavLink>{' '}
+											</li>
+											<li>
 												<NavLink
 													onClick={toggleClass}
 													activeClassName="is-active"

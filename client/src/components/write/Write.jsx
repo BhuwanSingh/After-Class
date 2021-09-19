@@ -1,18 +1,18 @@
 import { useContext, useState } from "react";
 import "./write.css";
 import axios from "axios";
-import { Context } from "../../context/Context";
+// import { Context } from "../../context/Context";
 
 export default function Write() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState(null);
-  const { user } = useContext(Context);
+//   const { user } = useContext(Context);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newPost = {
-      username: user.username,
+    	username:"student",
       title,
       desc,
     };
