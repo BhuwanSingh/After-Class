@@ -8,10 +8,12 @@
 	color: #d4ecdd !important;
 }
 body {
-	/* background: repeating-linear-gradient( #1a2238,  #1a2238 58.7%, #a2abc5  50.1%,white 100%); */
-}
-.bb1 {
-	height: auto;
+	background: repeating-linear-gradient(
+		#1a2238,
+		#1a2238 58.7%,
+		#a2abc5 50.1%,
+		white 100%
+	);
 }
 
 .whiteboard__con {
@@ -73,13 +75,13 @@ body {
 .flippy2 {
 	margin-top: 1.69rem;
 	margin-left: 22rem;
-	height: 10rem;
-	width: 10rem;
+	height: 11rem;
+	width: 11rem;
 }
 .front2 {
 	background-image: url(./images/p1.png);
 	background-repeat: no-repeat;
-	background-size: 10.6rem 10.6rem;
+	background-size: 11rem 11rem;
 	border-radius: 10%;
 }
 .back2 {
@@ -87,7 +89,7 @@ body {
 	color: #1a2238;
 	border-radius: 10%;
 	text-align: center;
-	padding-top: 0.5rem;
+	padding-top: 0rem;
 	font-weight: bold;
 }
 .flippy3 {
@@ -127,7 +129,7 @@ body {
 	color: #1a2238;
 	border-radius: 10%;
 	text-align: center;
-	padding-top: 4.24rem;
+	padding-top: 3.2rem;
 	font-weight: 400;
 }
 
