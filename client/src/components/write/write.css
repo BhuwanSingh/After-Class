@@ -31,10 +31,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("./upload.png");
+    background-size: 5.6vh 5vh;
     background-color: black;
     color: rgb(121, 118, 118);
     cursor: pointer;
+    
   }
+ 
   
   .writeInput {
     border: none;
