@@ -18,7 +18,7 @@ import IAS from "./components/IAS";
 import WhiteBoard from "./components/WhiteBoard";
 import Error404 from "./components/Pages/Error404"
 import OCR from './components/OCR'
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 import Contactus from "./components/contactus";
 import Profile from "./components/Pages/Profile";
