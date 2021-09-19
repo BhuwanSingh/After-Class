@@ -148,20 +148,22 @@ font-weight:700;
     font-family: 'Lato', 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 3.4rem;
-    padding: 1vh;
+    padding: 2.5rem;
     text-align: center;
     letter-spacing: 2px;
     word-spacing: 3px;
     padding-bottom: 1.7rem;
+    margin-right: 3rem;
 }
 .my_p{
     color: #1a2238 !important;
     font-size: 0.9rem;
     font-family:'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 1.3rem;
+    padding-top: 5rem;
     font-weight: 400;
     padding-left: 4.24rem;
     padding-right: 4.24rem;
     font-size:1rem;
+    margin-top: -5rem;
    
 } 
