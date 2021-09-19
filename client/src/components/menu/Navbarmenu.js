@@ -43,20 +43,18 @@ const Navbarmenu = () => {
 		boxClassSubMenu.push("");
 	}
 	return (
-		<header className="header__middle">
-			<div className="container">
-				<div className="row">
-					{" "}
-					{/* Add Logo  */}{" "}
-					<div className="header__middle__logo">
-						<NavLink exact activeClassName="is-active" to="/">
-							<img src={logo} alt="logo" />
-						</NavLink>{" "}
-					</div>{" "}
-					<div className="header__middle__menus">
-						<nav className="main-nav ">
-							{" "}
-							{/* Responsive Menu Button */}{" "}
+		<header className='header__middle'>
+			<div className='header__control'>
+
+					{/* Add Logo  */}
+					<div className='header__middle__logo'>
+						<NavLink exact activeClassName='is-active' to='/'>
+							<img className="img__logo" src={logo} alt='logo' />
+						</NavLink>
+					</div>
+					<div className='header__middle__menus'>
+						<nav className='main-nav '>
+							{/* Responsive Menu Button */}
 							{isResponsiveclose === true ? (
 								<>
 									<span
@@ -274,12 +272,12 @@ const Navbarmenu = () => {
 											</NavLink>{" "}
 										</li>{" "}
 									</>
-								)}{" "}
-							</ul>{" "}
-						</nav>{" "}
-					</div>{" "}
-				</div>{" "}
-			</div>{" "}
+								)}{' '}
+							</ul>
+						</nav>
+					</div>
+				
+			</div>
 		</header>
 	);
 };

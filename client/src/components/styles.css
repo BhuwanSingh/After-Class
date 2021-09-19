@@ -1,9 +1,9 @@
 
 .flippy{
-    margin-top: 20vh;
-    margin-left: 28vh;
-    height: 20vh;
-    width: 20vh;
+    margin-top: 8.3rem;
+    margin-left: 11.7rem;
+    height: 8.5rem;
+    width: 8.5rem;
     
     
 }
@@ -57,7 +57,7 @@ font-weight:700;
 
 .btn__link{
     margin-left:70% !important;
-    margin-top: -7vh !important;
+    margin-top: -3rem !important;
     padding: 5px 2rem;
 
 }
@@ -65,7 +65,7 @@ font-weight:700;
 .front{
     background-image: url(./images/p4.png);
     background-repeat: no-repeat;
-    background-size: 20vh 20vh;
+    background-size: 8.5rem 8.5rem;
     border-radius: 10%;
 }
 .back{
@@ -73,21 +73,21 @@ font-weight:700;
     color:  #1a2238;
     border-radius: 10%;
     text-align: center;
-    padding-top: 1.5vh;
+    padding-top: 0.63rem;
     font-weight: bold;
     font-size: 0.9rem;
 
 }
 .flippy2{
-    margin-top: 4vh;
-    margin-left: 53vh;
-    height: 25vh;
-    width: 25vh;
+    margin-top: 1.69rem;
+    margin-left: 22rem;
+    height: 10rem;
+    width: 10rem;
 }
 .front2{
     background-image: url(./images/p1.png);
     background-repeat: no-repeat;
-    background-size: 25vh 25vh;
+    background-size: 10.6rem 10.6rem;
     border-radius: 10%;
 }
 .back2{
@@ -96,43 +96,43 @@ font-weight:700;
     color:  #1a2238;
     border-radius: 10%;
     text-align: center;
-    padding-top: 1vh;
+    padding-top: 0.5rem;
     font-weight: bold;
 }
 .flippy3{
-    margin-top: -47.6vh;
-    margin-left: 51vh;
-    height:20vh;
-    width: 20vh;
+    margin-top: -20.1rem;
+    margin-left: 21.6rem;
+    height:8.5rem;
+    width: 8.5rem;
     
 }
 .front3{
     background-image: url(./images/p2.png);
     background-repeat: no-repeat;
     border-radius: 50%;
-    background-size:20vh 20vh;
+    background-size:8.5rem 8.5rem;
 }
 .back3{
     background-color:#8593e4;
     color:  #1a2238;
     border-radius: 50%;
     text-align: center;
-    padding-top: 7vh;
-    font-weight: bold;
+    padding-top: 2.9rem;
+    font-weight: 400;
 
 }
 .flippy4{
     
-    margin-top: 2vh;
-    margin-left: 20vh;
-    height: 30vh;
-    width: 29vh;
+    margin-top: 0.8rem;
+    margin-left: 8.4rem;
+    height: 12.7rem;
+    width: 12.3rem;
     
 }
 .front4{
     background-image: url(./images/p.png);
     background-repeat: no-repeat;
-    background-size: 29vh 30vh;
+    background-size: 12.3rem 12.7rem;
     border-radius: 10%;
 }
 .back4{
@@ -140,9 +140,8 @@ font-weight:700;
     color:  #1a2238;
     border-radius: 10%;
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 4.24rem;
     font-weight: 400;
-    font-weight: bold;
 
 }
 
@@ -150,22 +149,22 @@ font-weight:700;
  .my_h{
     color: #D5970F;
     font-family: 'Lato', 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 10vh;
+    font-weight: 400;
+    font-size: 3.4rem;
     padding: 1vh;
     text-align: center;
     letter-spacing: 2px;
     word-spacing: 3px;
+    padding-bottom: 1.7rem;
 }
 .my_p{
     color: #1a2238 !important;
-    font-size: 2vh;
+    font-size: 0.9rem;
     font-family:'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 5vh;
-    font-weight: light;
-    padding-left: 10vh;
-    padding-right: 10vh;
-    font-size:1.1rem;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+    padding-top: 1.3rem;
+    font-weight: 400;
+    padding-left: 4.24rem;
+    padding-right: 4.24rem;
+    font-size:1rem;
+   
 } 
