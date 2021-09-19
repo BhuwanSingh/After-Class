@@ -41,11 +41,7 @@ body {
 	width: 100%;
 	margin-bottom: 0.7rem;
 }
-input {
-	padding: 0.5rem;
-	width: 100%;
-	background-color: #f2f2f2;
-}
+
 .login-form {
 	text-align: center;
 	/* box-shadow: 0.8rem 0.8rem .6rem #A7BBC7; */
@@ -236,15 +232,16 @@ li {
 	padding: 2px 0 0 0;
 	z-index: 1000;
 } */
-*/ .bts {
+*/
+
+.bts{
 	margin-top: 0.75rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	padding-right: 1.1rem;
 	padding-left: 1.1rem;
-
-	background-color: #0d6efd;
-	color: #fff;
+	background-color: #0d6efd !important;
+	color: #fff !important;
 	border-radius: 2.5rem;
 	transition: all 0.4s;
 }
@@ -275,11 +272,23 @@ input[type='number'] {
 	padding: 0.4rem;
 	margin-bottom: 0.3rem;
 	font-weight: 400;
+	width: 100%;
+	background-color: #f2f2f2;
 }
+
 
 input[type='submit'] {
 	margin-left: 1 rem;
 	text-align: center;
+		margin-top: 0.75rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-right: 1.1rem;
+	padding-left: 1.1rem;
+	background-color: #0d6efd !important;
+	color: #fff !important;
+	border-radius: 2.5rem;
+	transition: all 0.4s;
 }
 
 /*---------------------------------------ContactUs page CSS--------------------------------------------------------

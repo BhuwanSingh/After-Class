@@ -42,62 +42,62 @@ export const LogIn = ({ setloggedin }) => {
 	};
 
 	return (
-		<Fragment>
-			<section>
-				<div>
-					<div className='login-form'>
-						<form method='POST' onSubmit={loginUser}>
-							<div className='col'>
-								<h2 className='h2__form '>Login</h2>
-								<div className='login-img' style={{ padding: '1rem' }}>
-									<img src={logo} alt='loginbud' />
-								</div>
-								<div className='form-field'>
-									<input
-										type='text'
-										name='email'
-										id='email'
-										autoComplete='off'
-										value={email}
-										onChange={(e) => {
-											setEmail(e.target.value);
-										}}
-										placeholder='Your Email'
-									/>
-								</div>
-								<div className='form-field'>
-									<input
-										type='password'
-										name='password'
-										id='password'
-										autoComplete='off'
-										value={password}
-										onChange={(e) => {
-											setPassword(e.target.value);
-										}}
-										placeholder='Your Password'
-									/>
-								</div>
-								<div className='form-field d-flex justify-content-center'>
-									<input
-										className='bts'
-										type='submit'
-										name='signin'
-										id='signin'
-										value='Sign In'
-										style={{ width: '50%' }}
-									/>
-								</div>
-							</div>
-						</form>
-						<NavLink to='/SignUp' className='signup-image-link'>
-							New here?
-						</NavLink>
-					</div>
-				</div>
-			</section>
-		</Fragment>
-	);
+    <Fragment>
+      <section>
+        <div>
+          <div className="login-form">
+            <form method="POST" onSubmit={loginUser}>
+              <div className="col">
+                <h2 className="h2__form ">Login</h2>
+                <div className="login-img" style={{ padding: "1rem" }}>
+                  <img src={logo} alt="loginbud" />
+                </div>
+                <div className="form-field">
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    autoComplete="off"
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div className="form-field">
+				<input
+                    type="password"
+                    name="password"
+                    id="password"
+                    autoComplete="off"
+                    value={password}
+                    onChange={(e) => {
+                      setPassword(e.target.value);
+                    }}
+                    placeholder="Your Password"
+                  />
+                </div>
+                <div className="form-field d-flex justify-content-center">
+                  <input
+                    className="bts"
+                    type="submit"
+                    name="signin"
+                    id="signin"
+                    value="Sign In"
+                    style={{ width: "50%" }}
+                  />
+                </div>
+              </div>
+            </form>
+            <NavLink to="/SignUp" className="signup-image-link">
+              New here?
+            </NavLink>
+          </div>
+        </div>
+      </section>
+    </Fragment>
+  );
 };
 
 export default LogIn;
