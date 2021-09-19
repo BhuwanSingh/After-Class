@@ -4,7 +4,7 @@ import Flipcard2 from './Flipcard2';
 import Flipcard3 from './Flipcard3';
 import Flipcard4 from './Flipcard4';
 import Flipcard5 from './Flipcard5';
-import Flipcard6 from './Flipcard6';
+
 import Flipcard7 from './Flipcard7';
 import Footer from './Footer';
 import './styles.css';
