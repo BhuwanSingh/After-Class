@@ -1,9 +1,12 @@
 const express = require("express");
 const app = express();
-const httpServer = require("http").createServer(app)
+const httpServer = require("http").createServer(app);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+const path = require("path");
+app.use("/images", express.static(path.join(__dirname, "./images")));
 
 const cors = require("cors");
 app.use(
@@ -12,12 +15,12 @@ app.use(
   })
 );
 
-const io = require("socket.io")(httpServer,{
-    cors:{
-        origin:"*",
-        credentials:true
-    }
-})
+const io = require("socket.io")(httpServer, {
+  cors: {
+    origin: "*",
+    credentials: true,
+  },
+});
 
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
@@ -37,22 +40,23 @@ mongoose
   })
   .then(() => console.log("DB Connection Successful!"));
 
-  const storage = multer.diskStorage({
-    destination:(req , file , cb) => {
-      cb(null, "images")
-    },filename:(req , file , cb) => {
-      cb(null, req.body.name)
-    }
-  })
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "images");
+  },
+  filename: (req, file, cb) => {
+    cb(null, req.body.name);
+  },
+});
 
-const upload = multer({storage:storage});
-app.post("/api/upload" , upload.single("file") , (req, res) => {
-  res.status(200).json("File has been uploaded successfully")
-})
+const upload = multer({ storage: storage });
+app.post("/api/upload", upload.single("file"), (req, res) => {
+  res.status(200).json("File has been uploaded successfully");
+});
 
 //Linking router files
 app.use("/user", require("./router/user"));
-app.use("/posts" , require("./router/posts"))
+app.use("/posts", require("./router/posts"));
 
 app.get("/test_api", (req, res) => {
   res.json("just another test message");
@@ -61,48 +65,46 @@ app.get("/test_api", (req, res) => {
 const users = {};
 
 io.on("connection", (socket) => {
-    console.log("someone connecte and socket id " + socket.id);
+  console.log("someone connecte and socket id " + socket.id);
 
-    socket.on("disconnect", () => {
-        console.log(`${socket.id} disconnected`);
+  socket.on("disconnect", () => {
+    console.log(`${socket.id} disconnected`);
 
-        for (let user in users) {
-            if (users[user] === socket.id) {
-                delete users[user];
-            }
-        }
+    for (let user in users) {
+      if (users[user] === socket.id) {
+        delete users[user];
+      }
+    }
 
-        io.emit("all_users", users);
-    });
+    io.emit("all_users", users);
+  });
 
-    socket.on("new_user", (username) => {
-        console.log("Server : " + username);
-        users[username] = socket.id;
+  socket.on("new_user", (username) => {
+    console.log("Server : " + username);
+    users[username] = socket.id;
 
-        io.emit("all_users", users);
-    });
+    io.emit("all_users", users);
+  });
 
-    socket.on("send_message", (data) => {
-        console.log(data);
+  socket.on("send_message", (data) => {
+    console.log(data);
 
-        const socketId = users[data.receiver];
-        io.to(socketId).emit("new_message", data);
-    });
+    const socketId = users[data.receiver];
+    io.to(socketId).emit("new_message", data);
+  });
 
-    socket.on('canvas-data',(params,data)=>{
-        socket.join(params)
-        console.log("Joined:"+params)
-        // socket.broadcast.emit('canvas-data',data)
-        io.to(params).emit("canvas-data", data);
-    })
-
+  socket.on("canvas-data", (params, data) => {
+    socket.join(params);
+    console.log("Joined:" + params);
+    // socket.broadcast.emit('canvas-data',data)
+    io.to(params).emit("canvas-data", data);
+  });
 });
 
 // app.listen(port, () => console.log(`Listening on port ${port}`));
 
-httpServer.listen(port, ()=>{
-    console.log(`Listening on port ${port}`)
-})
-
+httpServer.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
 
 // a comment.
