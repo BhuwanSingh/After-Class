@@ -180,16 +180,6 @@ const Navbarmenu = () => {
 									exact
 									activeClassName='is-active'
 									onClick={toggleClass}
-									to={`/chat`}
-								>
-									StuddyBuddy{' '}
-								</NavLink>{' '}
-							</li>{' '}
-							<li className='menu-item'>
-								<NavLink
-									exact
-									activeClassName='is-active'
-									onClick={toggleClass}
 									to={`/bookposts`}
 								>
 									Book Buy/Sell
@@ -247,7 +237,7 @@ const Navbarmenu = () => {
 												Write Post
 											</NavLink>{' '}
 										</li>
-										{/* <li>
+										<li>
 											<NavLink
 												onClick={toggleClass}
 												activeClassName='is-active'
@@ -255,7 +245,7 @@ const Navbarmenu = () => {
 											>
 												Chat{' '}
 											</NavLink>{' '}
-										</li>{' '} */}
+										</li>{' '}
 										<li>
 											<NavLink
 												onClick={singoutfunction}
