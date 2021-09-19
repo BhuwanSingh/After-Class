@@ -12,9 +12,9 @@ export default function Post({ post }) {
             <span className="postCat">{c.name}</span>
           ))}
         </div>
-        <Link to={`/post/${post._id}`} className="link">
+        <span to={`/post/${post._id}`} className="link">
           <span className="postTitle">{post.title}</span>
-        </Link>
+        </span>
         <hr />
         <span className="postDate">
           {new Date(post.createdAt).toDateString()}
