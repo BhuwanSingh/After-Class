@@ -17,7 +17,7 @@ class Flipcard extends Component {
 				<FrontSide className="front"></FrontSide>
 				<Link to="/Doubt" className="text-card">
 				<BackSide className="back"> 
-				Having doubts and don't know who to ask? Tension not,just click here.</BackSide></Link>
+				</BackSide></Link>
 				
 			</Flippy>
 		);
