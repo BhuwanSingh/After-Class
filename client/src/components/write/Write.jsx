@@ -23,7 +23,7 @@ export default function Write() {
       data.append("file", file);
       newPost.photo = filename;
       try {
-        await axios.post("/upload", data);
+        await axios.post("/api/upload", data);
       } catch (err) {}
     }
     try {
