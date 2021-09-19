@@ -31,19 +31,21 @@ export default function Posts() {
 				category='Gate ECE'
 			/>
 			<BookPost
-				img='https://apollo-singapore.akamaized.net/v1/files/tzlbqrlj6ypg-IN/image;s=780x0;q=60'
-				title='JEE Book SET'
-				description=''
-				price=''
-				postedAt=''
+				img='https://apollo-singapore.akamaized.net/v1/files/o7b8on6v4gm53-IN/image;s=780x0;q=60'
+				title='CAT ENTRANCE BOOKS BY TIME INSTITUTE'
+				description='The complete package is providing all the basics of three sections.And there are more than sufficient questions here with detailed solution.. And it covers not only CAT syllabus also other MBA exams are covered here. Great books package. Abridged and to the point. A good material for basics.'
+				contact = '7895242039'
+				price='₹ 3000'
+				postedAt='10 September 2021'
 				category=''
 			/>
 			<BookPost
-				img='https://d2j6dbq0eux0bg.cloudfront.net/images/741189/535732250.jpg'
-				title='Pradeep Chemistry Class 12th'
-				description=''
-				price=''
-				postedAt=''
+				img='https://apollo-singapore.akamaized.net/v1/files/8j8o4v31lgsu2-IN/image;s=780x0;q=60'
+				title='Lucents General Knowledge Book'
+				description='-Best book ever for(geography, history, economics, polity)this book is best. Not for general science. I think general science go for arihant general science encyclopaedia. In Lucent publication reduce the mistakes in this year. This is the best book go for it. This covers all the topics'
+				contact = '9852172040'
+				price='₹ 140'
+				postedAt=' 13 September 2021'
 				category=''
 			/>
 		</div>
