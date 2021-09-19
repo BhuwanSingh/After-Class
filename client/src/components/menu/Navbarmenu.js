@@ -82,7 +82,7 @@ const Navbarmenu = () => {
 							</>
 						)}{' '}
 						<ul className={boxClass.join(' ')}>
-							<li
+							{/* <li
 								onClick={toggleSubmenu}
 								className='menu-item sub__menus__arrows'
 							>
@@ -164,6 +164,16 @@ const Navbarmenu = () => {
 										</NavLink>{' '}
 									</li>{' '}
 								</ul>{' '}
+							</li>{' '} */}
+							<li className='menu-item'>
+								<NavLink
+									exact
+									activeClassName='is-active'
+									onClick={toggleClass}
+									to={`/ocr`}
+								>
+									Text Scanner
+								</NavLink>{' '}
 							</li>{' '}
 							<li className='menu-item'>
 								<NavLink
