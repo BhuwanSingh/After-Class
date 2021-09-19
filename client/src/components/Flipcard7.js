@@ -16,8 +16,9 @@ class Flipcard7 extends Component {
 				 /// these are optional style, it is not necessary
 			>
 				<FrontSide className="front7"></FrontSide>
-				<Link to="/Chat" className="text-card">
+				<Link to="/StudyRoom" className="text-card">
 				<BackSide className="back7"> 
+				Study Room
 				</BackSide></Link>
 			</Flippy>
 		);
