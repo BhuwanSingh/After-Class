@@ -12,7 +12,10 @@
 }
 body{
     background: repeating-linear-gradient( #1a2238,  #1a2238 58.7%, #a2abc5  50.1%,white 100%);
-    
+}
+.bb1
+{
+    height: auto;
 }
 
 .whiteboard__con{
