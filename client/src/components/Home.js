@@ -20,7 +20,6 @@ function Home() {
 					<Flipcard4 />
 					<Flipcard7 />
 					<Flipcard5 />
-				
 					
 				</div>
 				<div className='righthome'>

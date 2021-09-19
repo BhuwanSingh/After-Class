@@ -3,7 +3,7 @@
 	margin: 0px 25px 40px 25px;
 	display: flex;
 	flex-direction: column;
-	background: lightgray;
+	background: rgba(250, 248, 248, 0.938);
 	padding: 0.1rem;
 }
 
