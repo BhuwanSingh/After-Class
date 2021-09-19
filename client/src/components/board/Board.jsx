@@ -8,7 +8,7 @@ var id = crypto.randomBytes(20).toString('hex');
 class Board extends React.Component{
 
     timeout;
-    socket = io.connect("http://localhost:3001/",{ query: { myParam: 'myValue' } })
+    socket = io.connect("https://after-class.bhuwansingh.repl.co/",{ query: { myParam: 'myValue' } })
 
     ctx;
     // isDrawing = false;
