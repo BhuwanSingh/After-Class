@@ -18,6 +18,7 @@ import IAS from "./components/IAS";
 import WhiteBoard from "./components/WhiteBoard";
 import Error404 from "./components/Pages/Error404"
 import OCR from './components/OCR'
+import Footer from "./components/Footer";
 
 import Contactus from "./components/contactus";
 import Profile from "./components/Pages/Profile";
@@ -49,6 +50,7 @@ function App() {
           <Route path="/ContactUs" component={Contactus} />
                     <Route path="/Profile" render={(props) => <Profile loggedin ={loggedin} />} />
           <Route component={Error404} />
+          <Footer />
         </Switch>
 		</Router> 
 

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
-import { FiAlignRight, FiXCircle, FiChevronDown } from 'react-icons/fi';
-import logo from '../../img/logo.png';
+import React, { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import { FiAlignRight, FiXCircle, FiChevronDown } from "react-icons/fi";
+import logo from "../../img/logo.png";
 
 const Navbarmenu = () => {
 	const [isMenu, setisMenu] = useState(false);
@@ -12,11 +12,11 @@ const Navbarmenu = () => {
 		setResponsiveclose(isResponsiveclose === false ? true : false);
 	};
 
-	let boxClass = ['main-menu menu-right menuq1'];
+	let boxClass = ["main-menu menu-right menuq1"];
 	if (isMenu) {
-		boxClass.push('menuq2');
+		boxClass.push("menuq2");
 	} else {
-		boxClass.push('');
+		boxClass.push("");
 	}
 	// if (localStorage.getItem('username'))
 	// 	setUser(localStorage.getItem('username'));
@@ -28,234 +28,248 @@ const Navbarmenu = () => {
 	const singoutfunction = () => {
 		const logOutUser = async () => {
 			localStorage.clear();
-			const res = await fetch('user/signout', {
-				method: 'POST',
+			const res = await fetch("user/signout", {
+				method: "POST",
 			});
 		};
 
 		logOutUser();
 	};
 
-	let boxClassSubMenu = ['sub__menus'];
+	let boxClassSubMenu = ["sub__menus"];
 	if (isMenuSubMenu) {
-		boxClassSubMenu.push('sub__menus__Active');
+		boxClassSubMenu.push("sub__menus__Active");
 	} else {
-		boxClassSubMenu.push('');
+		boxClassSubMenu.push("");
 	}
 	return (
-		<header className='header__middle'>
-			<div className='container'>
-				<div className='row'>
-					{/* Add Logo  */}
-					<div className='header__middle__logo'>
-						<NavLink exact activeClassName='is-active' to='/'>
-							<img src={logo} alt='logo' />
-						</NavLink>
-					</div>
-					<div className='header__middle__menus'>
-						<nav className='main-nav '>
-							{/* Responsive Menu Button */}
+		<header className="header__middle">
+			<div className="container">
+				<div className="row">
+					{" "}
+					{/* Add Logo  */}{" "}
+					<div className="header__middle__logo">
+						<NavLink exact activeClassName="is-active" to="/">
+							<img src={logo} alt="logo" />
+						</NavLink>{" "}
+					</div>{" "}
+					<div className="header__middle__menus">
+						<nav className="main-nav ">
+							{" "}
+							{/* Responsive Menu Button */}{" "}
 							{isResponsiveclose === true ? (
 								<>
 									<span
-										className='menubar__button'
-										style={{ display: 'none' }}
+										className="menubar__button"
+										style={{
+											display: "none",
+										}}
 										onClick={toggleClass}
 									>
-										{' '}
-										<FiXCircle />{' '}
-									</span>
+										{" "}
+										<FiXCircle />{" "}
+									</span>{" "}
 								</>
 							) : (
 								<>
 									<span
-										className='menubar__button'
-										style={{ display: 'none' }}
+										className="menubar__button"
+										style={{
+											display: "none",
+										}}
 										onClick={toggleClass}
 									>
-										{' '}
-										<FiAlignRight />{' '}
-									</span>
+										{" "}
+										<FiAlignRight />{" "}
+									</span>{" "}
 								</>
-							)}
-							<ul className={boxClass.join(' ')}>
+							)}{" "}
+							<ul className={boxClass.join(" ")}>
 								<li
 									onClick={toggleSubmenu}
-									className='menu-item sub__menus__arrows'
+									className="menu-item sub__menus__arrows"
 								>
-									{' '}
-									<Link to='#'>
-										{' '}
-										Study Material <FiChevronDown />{' '}
-									</Link>
-									<ul className={boxClassSubMenu.join(' ')} id='submenu_button'>
+									{" "}
+									<Link to="#">
+										{" "}
+										Study Material <FiChevronDown />{" "}
+									</Link>{" "}
+									<ul
+										className={boxClassSubMenu.join(" ")}
+										id="submenu_button"
+									>
 										<li>
-											{' '}
+											{" "}
 											<NavLink
 												onClick={toggleClass}
-												activeClassName='is-active'
+												activeClassName="is-active"
 												to={`/JEE`}
 											>
-												{' '}
-												JEE{' '}
-											</NavLink>{' '}
-										</li>
+												{" "}
+												JEE{" "}
+											</NavLink>{" "}
+										</li>{" "}
 										<li>
 											<NavLink
 												onClick={toggleClass}
-												activeClassName='is-active'
+												activeClassName="is-active"
 												to={`/NEET`}
 											>
-												{' '}
-												NEET{' '}
-											</NavLink>{' '}
-										</li>
+												{" "}
+												NEET{" "}
+											</NavLink>{" "}
+										</li>{" "}
 										<li>
 											<NavLink
 												onClick={toggleClass}
-												activeClassName='is-active'
+												activeClassName="is-active"
 												to={`/CAT`}
 											>
-												{' '}
-												CAT{' '}
-											</NavLink>{' '}
-										</li>
+												{" "}
+												CAT{" "}
+											</NavLink>{" "}
+										</li>{" "}
 										<li>
 											<NavLink
 												onClick={toggleClass}
-												activeClassName='is-active'
+												activeClassName="is-active"
 												to={`/BTech`}
 											>
-												{' '}
-												BTech{' '}
-											</NavLink>{' '}
-										</li>
+												{" "}
+												BTech{" "}
+											</NavLink>{" "}
+										</li>{" "}
 										<li>
 											<NavLink
 												onClick={toggleClass}
-												activeClassName='is-active'
+												activeClassName="is-active"
 												to={`/CBSE`}
 											>
-												{' '}
-												CBSE{' '}
-											</NavLink>{' '}
-										</li>
+												{" "}
+												CBSE{" "}
+											</NavLink>{" "}
+										</li>{" "}
 										<li>
 											<NavLink
 												onClick={toggleClass}
-												activeClassName='is-active'
+												activeClassName="is-active"
 												to={`/IAS`}
 											>
-												{' '}
-												IAS{' '}
-											</NavLink>{' '}
-										</li>
+												{" "}
+												IAS{" "}
+											</NavLink>{" "}
+										</li>{" "}
 										<li>
 											<NavLink
 												onClick={toggleClass}
-												activeClassName='is-active'
+												activeClassName="is-active"
 												to={`/CLAT`}
 											>
-												{' '}
-												CLAT{' '}
-											</NavLink>{' '}
-										</li>
-									</ul>
-								</li>
-								<li className='menu-item'>
+												{" "}
+												CLAT{" "}
+											</NavLink>{" "}
+										</li>{" "}
+									</ul>{" "}
+								</li>{" "}
+								<li className="menu-item">
 									<NavLink
 										exact
-										activeClassName='is-active'
+										activeClassName="is-active"
 										onClick={toggleClass}
 										to={`/StudyRoom`}
 									>
-										{' '}
-										Study Room
-									</NavLink>
-								</li>
-								<li className='menu-item '>
+										{" "}
+										Study Room{" "}
+									</NavLink>{" "}
+								</li>{" "}
+								<li className="menu-item ">
 									<NavLink
 										onClick={toggleClass}
-										activeClassName='is-active'
+										activeClassName="is-active"
 										to={`/Doubt`}
 									>
-										{' '}
-										Discuss{' '}
-									</NavLink>{' '}
-								</li>
-								{localStorage.getItem('username') ? (
+										{" "}
+										Discuss{" "}
+									</NavLink>{" "}
+								</li>{" "}
+								{localStorage.getItem("username") ? (
 									<li
 										onClick={toggleSubmenu}
-										className='menu-item sub__menus__arrows'
+										className="menu-item sub__menus__arrows"
 									>
-										{' '}
-										<Link to='#'>
-											{localStorage.getItem('username')}
-											<FiChevronDown />{' '}
-										</Link>
+										{" "}
+										<Link to="#">
+											{" "}
+											{localStorage.getItem(
+												"username"
+											)}{" "}
+											<FiChevronDown />{" "}
+										</Link>{" "}
 										<ul
-											className={boxClassSubMenu.join(' ')}
-											id='submenu_button'
+											className={boxClassSubMenu.join(
+												" "
+											)}
+											id="submenu_button"
 										>
 											<li>
-												{' '}
+												{" "}
 												<NavLink
 													onClick={toggleClass}
-													activeClassName='is-active'
+													activeClassName="is-active"
 													to={`/profile`}
 												>
-													My Profile
-												</NavLink>{' '}
-											</li>
+													My Profile{" "}
+												</NavLink>{" "}
+											</li>{" "}
 											<li>
 												<NavLink
 													onClick={toggleClass}
-													activeClassName='is-active'
+													activeClassName="is-active"
 													to={`/chat`}
 												>
-													Chat
-												</NavLink>{' '}
-											</li>
+													Chat{" "}
+												</NavLink>{" "}
+											</li>{" "}
 											<li>
 												<NavLink
 													onClick={singoutfunction}
-													activeClassName='is-active'
+													activeClassName="is-active"
 													to={`/`}
 												>
-													LogOut
-												</NavLink>{' '}
-											</li>
-										</ul>
+													LogOut{" "}
+												</NavLink>{" "}
+											</li>{" "}
+										</ul>{" "}
 									</li>
 								) : (
 									<>
-										<li className='menu-item  '>
+										<li className="menu-item  ">
 											<NavLink
 												onClick={toggleClass}
-												activeClassName='is-active'
+												activeClassName="is-active"
 												to={`/LogIn`}
 											>
-												{' '}
-												Log In{' '}
-											</NavLink>{' '}
-										</li>
-										<li className='menu-item '>
+												{" "}
+												Log In{" "}
+											</NavLink>{" "}
+										</li>{" "}
+										<li className="menu-item ">
 											<NavLink
 												onClick={toggleClass}
-												activeClassName='is-active'
+												activeClassName="is-active"
 												to={`/SignUp`}
 											>
-												{' '}
-												Sign Up
-											</NavLink>{' '}
-										</li>
+												{" "}
+												Sign Up{" "}
+											</NavLink>{" "}
+										</li>{" "}
 									</>
-								)}{' '}
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
+								)}{" "}
+							</ul>{" "}
+						</nav>{" "}
+					</div>{" "}
+				</div>{" "}
+			</div>{" "}
 		</header>
 	);
 };
