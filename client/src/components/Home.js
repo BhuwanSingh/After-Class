@@ -26,7 +26,7 @@ function Home() {
           </p>
         </div>
 		  </div>
-		  <Footer></Footer>
+		  <Footer />
     </div>
   );
 }

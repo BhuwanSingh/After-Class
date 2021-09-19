@@ -18,9 +18,11 @@ import IAS from "./components/IAS";
 import WhiteBoard from "./components/WhiteBoard";
 import Error404 from "./components/Pages/Error404"
 import OCR from './components/OCR'
+import Footer from "./components/footer";
 
 import Contactus from "./components/contactus";
 import Profile from "./components/Pages/Profile";
+import Write from "./components/write/Write";
 
 function App() {
   const [loggedin, setloggedin] = useState("")
@@ -43,12 +45,14 @@ function App() {
           <Route path="/LogIn" render={(props) => <LogIn setloggedin ={setloggedin} />} />
           <Route path="/SignUp" component={SignUp} />
           <Route path="/StudyRoom" component={StudyRoom} />
+          <Route path="/Write" component={Write} />
           <Route path="/Chat" component={Chat} />
           <Route path="/WhiteBoard" component={WhiteBoard} />
           <Route path="/OCR" component={OCR} />
           <Route path="/ContactUs" component={Contactus} />
                     <Route path="/Profile" render={(props) => <Profile loggedin ={loggedin} />} />
           <Route component={Error404} />
+          <Footer />
         </Switch>
 		</Router> 
 

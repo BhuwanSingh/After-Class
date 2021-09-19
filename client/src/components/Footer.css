@@ -1,0 +1,19 @@
+.footer1 {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:6vh;   /* Height of the footer */
+    background:rgb(9, 14, 46);
+ 
+}
+  .flink1{
+      color:#e2c075;
+      font-weight: bold;
+      float: right;
+      margin-right: 23vh;
+      margin-top: -1vh;
+      
+  }
+  .flink1:hover{
+      color:#ffb806;
+  }

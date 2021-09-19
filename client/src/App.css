@@ -246,15 +246,14 @@ li {
 .sub__menus {
 	position: absolute;
 	display: none;
-	backdrop-filter: drop-shadow(4px 4px 10px black);
-	backdrop-filter: blur(2px);
-	color:  #1a2238 !important;
+	background-color: #121227;
+	border-style: solid;
 	width: 227px;
 	top:4rem;
 	left: 1.5rem;
 	padding: 2px 0 0 0;
 	z-index: 1000;
-	box-shadow: 0 10px 12px rgb(22 33 39 / 25%);
+
 }
 
 
