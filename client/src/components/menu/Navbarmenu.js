@@ -180,6 +180,16 @@ const Navbarmenu = () => {
 									exact
 									activeClassName='is-active'
 									onClick={toggleClass}
+									to={`/bookposts`}
+								>
+									Book Buy/Sell
+								</NavLink>{' '}
+							</li>{' '}
+							<li className='menu-item'>
+								<NavLink
+									exact
+									activeClassName='is-active'
+									onClick={toggleClass}
 									to={`/StudyRoom`}
 								>
 									{' '}
