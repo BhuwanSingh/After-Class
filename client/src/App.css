@@ -5,7 +5,6 @@
 .homehead {
 	display: flex;
 	flex-direction: row;
-	background: repeating-linear-gradient(#1a2238, #1a2238 58.7%);
 }
 .lefthome {
 	flex: 1;
@@ -94,7 +93,7 @@ input {
 	color: blue;
 }
 
-.sec__one {
+/* .sec__one {
 	position: relative;
 	width: 100%;
 	display: flex;
@@ -150,11 +149,11 @@ li {
 	text-transform: uppercase;
 	text-decoration: none;
 	margin-top: 33px;
-}
+} */
 
 /*------------------------------------------------------*/
 
-.header__middle {
+/* .header__middle {
 	display: inline-block;
 	margin-top: 0;
 	background-color: #1a2238;
@@ -196,7 +195,7 @@ li {
 	text-decoration: none;
 	cursor: pointer;
 	/* float:right; */
-	padding: 0 0.3rem;
+/* padding: 0 0.3rem;
 }
 
 .header__middle__logo {
@@ -209,7 +208,7 @@ li {
 /* .active{
   color: #ff1800!important;
 } */
-.header__middle__menus span.text {
+/* .header__middle__menus span.text {
 	position: absolute;
 	right: 177px;
 	bottom: 10px;
@@ -236,9 +235,8 @@ li {
 	left: 1.5rem;
 	padding: 2px 0 0 0;
 	z-index: 1000;
-}
-
-.bts {
+} */
+*/ .bts {
 	margin-top: 0.75rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
@@ -435,9 +433,9 @@ input[type='submit'] {
 }
 
 /*------------------------------------------MEDIA QUERIES---------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 	.header__middle .active {
 		color: #fdb979 !important;
 	}
@@ -545,7 +543,7 @@ input[type='submit'] {
 	.menu-item .sub__menus__full a {
 		text-align: left;
 	}
-}
+}  */
 
 /*===========================================*/
 /*CHAT APP CSS*/
