@@ -1,9 +1,4 @@
-.flippy {
-	margin-top: 8.3rem;
-	margin-left: 11.7rem;
-	height: 8.5rem;
-	width: 8.5rem;
-}
+
 .text-card {
 	color: #d4ecdd !important;
 }
@@ -56,11 +51,17 @@ body {
 	margin-top: -3rem !important;
 	padding: 5px 2rem;
 }
+.flippy {
+	margin-top:2vh;
+	margin-left:40vh;
+	height: 25vh;
+	width: 25vh;
+}
 
 .front {
-	background-image: url(./images/p4.png);
+	background-image: url(./images/study.png);
 	background-repeat: no-repeat;
-	background-size: 8.5rem 8.5rem;
+	background-size: 25vh 25vh;
 	border-radius: 10%;
 }
 .back {
@@ -73,15 +74,15 @@ body {
 	font-size: 0.9rem;
 }
 .flippy2 {
-	margin-top: 1.69rem;
-	margin-left: 22rem;
-	height: 11rem;
-	width: 11rem;
+	margin-top: 2vh;
+	margin-left: 48vh;
+	height: 19vh;
+	width: 19vh;
 }
 .front2 {
 	background-image: url(./images/p1.png);
 	background-repeat: no-repeat;
-	background-size: 11rem 11rem;
+	background-size: 19vh 19vh;
 	border-radius: 10%;
 }
 .back2 {
@@ -92,36 +93,36 @@ body {
 	padding-top: 0rem;
 	font-weight: bold;
 }
-.flippy3 {
-	margin-top: -20.1rem;
-	margin-left: 21.6rem;
-	height: 8.5rem;
-	width: 8.5rem;
+ .flippy3 {
+	margin-top: -19vh;
+	margin-left: 21vh;
+	height: 25vh;
+	width: 25vh;
 }
 .front3 {
-	background-image: url(./images/p2.png);
+	background-image: url(./images/download.png);
 	background-repeat: no-repeat;
-	border-radius: 50%;
-	background-size: 8.5rem 8.5rem;
+	border-radius: 10%;
+	background-size: 25vh 25vh;
 }
 .back3 {
 	background-color: #8593e4;
 	color: #1a2238;
-	border-radius: 50%;
+	border-radius: 10%;
 	text-align: center;
 	padding-top: 2.9rem;
 	font-weight: 400;
-}
+} 
 .flippy4 {
-	margin-top: 0.8rem;
-	margin-left: 8.4rem;
-	height: 12.7rem;
-	width: 12.3rem;
+	margin-top:-40vh;
+	margin-left: 68vh;
+	height: 20vh;
+	width: 20vh;
 }
 .front4 {
-	background-image: url(./images/p.png);
+	background-image: url(./images/d.png);
 	background-repeat: no-repeat;
-	background-size: 12.3rem 12.7rem;
+	background-size: 20vh 20vh;
 	border-radius: 10%;
 }
 .back4 {
@@ -132,6 +133,50 @@ body {
 	padding-top: 3.2rem;
 	font-weight: 400;
 }
+
+ .flippy7 {
+	margin-top: 2vh;
+	margin-left: 68vh;
+	height: 25vh;
+	width: 25vh;
+}
+.front7 {
+	background-image: url(./images/me.png);
+	background-repeat: no-repeat;
+	background-size: 25vh 25vh;
+	border-radius: 10%;
+}
+.back7 {
+	background-color: #8593e4;
+	color: #1a2238;
+	border-radius: 10%;
+	text-align: center;
+	padding-top: 20vh;
+	font-weight: 400;
+}
+
+.flippy5 {
+	margin-top:-11vh;
+	margin-left: 47vh;
+	height: 19vh;
+	width: 19vh;
+}
+.front5 {
+	background-image: url(./images/iag.png);
+	background-repeat: no-repeat;
+	background-size: 19vh 19vh;
+	border-radius: 10%;
+}
+.back5 {
+	background-color: #8593e4;
+	color: #1a2238;
+	text-align: center;
+	padding-top: 2.9rem;
+	font-weight: 400;
+	border-radius: 10%;
+}
+
+
 
 .my_h {
 	color: #d5970f;
