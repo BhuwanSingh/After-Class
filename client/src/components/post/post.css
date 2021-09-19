@@ -1,9 +1,9 @@
 @keyframes mymove {
-  50% {box-shadow: 10px 20px 30px rgb(112, 112, 243);}
+  50% {box-shadow: 10px 20px 30px rgb(112, 112, 212);}
 }
 
 .post {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255);
     width: 385px;
     margin: 0px 25px 40px 25px;
     animation: mymove 5s infinite;
@@ -12,10 +12,10 @@
   
   .postImg {
     width: 100%;
-    height: 280px;
+    height: auto;
     object-fit: cover;
-    border-top-left-radius: 2vh;
-    border-top-right-radius: 2vh;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
     
   }
   
@@ -33,6 +33,7 @@
     margin-top: 1vh;
     margin-right: 10px;
     cursor: pointer;
+
   }
   
   .postTitle {
@@ -44,6 +45,7 @@
     font-weight: 600;
     cursor: pointer;
     color: rgb(4, 6, 36);
+
   }
   
   .postDate {
@@ -58,7 +60,6 @@
   .postDesc {
     font-family: "Varela Round", sans-serif;
     font-size: 1.8vh;
-    padding: 2vh;
     color: rgb(3, 3, 3);
     text-align: center;
     line-height: 3vh;
