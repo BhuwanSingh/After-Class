@@ -1,14 +1,48 @@
-import BookPost from "./../bookpost/BookPost";
-import "./bookposts.css";
-
+import BookPost from './../bookpost/BookPost';
+import './bookposts.css';
 export default function Posts() {
-  return (
-    <div className="posts">
-      <BookPost img="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-      <BookPost img="https://images.pexels.com/photos/6758029/pexels-photo-6758029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-      <BookPost img="https://images.pexels.com/photos/6711867/pexels-photo-6711867.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
-      <BookPost img="https://images.pexels.com/photos/5490778/pexels-photo-5490778.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
-      <BookPost img="https://images.pexels.com/photos/4916559/pexels-photo-4916559.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
-    </div>
-  );
+	return (
+		<div className='posts'>
+			<BookPost
+				img='https://apollo-singapore.akamaized.net/v1/files/ccw3kw6wyj2q1-IN/image;s=780x0;q=60'
+				title=' JEE Solved Paper'
+				description=''
+				price='Rs. 150'
+				postedAt=''
+				category=''
+			/>
+			<BookPost
+				img='https://apollo-singapore.akamaized.net/v1/files/ef3ac45h9rk62-IN/image;s=1080x1080'
+				title='JEE Physics Solved Paper'
+				description=''
+				price=''
+				postedAt=''
+				category=''
+			/>
+			<BookPost
+				img='https://apollo-singapore.akamaized.net/v1/files/9p18ybhex7zf1-IN/image;s=780x0;q=60'
+				title='IIT JEE Mathematics'
+				description=''
+				price=''
+				postedAt=''
+				category=''
+			/>
+			<BookPost
+				img='https://apollo-singapore.akamaized.net/v1/files/tzlbqrlj6ypg-IN/image;s=780x0;q=60'
+				title='JEE Book SET'
+				description=''
+				price=''
+				postedAt=''
+				category=''
+			/>
+			<BookPost
+				img='https://d2j6dbq0eux0bg.cloudfront.net/images/741189/535732250.jpg'
+				title='Pradeep Chemistry Class 12th'
+				description=''
+				price=''
+				postedAt=''
+				category=''
+			/>
+		</div>
+	);
 }
