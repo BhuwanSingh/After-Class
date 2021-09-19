@@ -76,7 +76,6 @@ li {
 }
 .header__middle {
 	display: flex;
-
 	background-color: #1a2238;
 	border-bottom: 1px black;
 	position: relative;

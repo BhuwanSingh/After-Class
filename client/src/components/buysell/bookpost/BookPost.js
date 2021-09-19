@@ -16,7 +16,7 @@ export default function Post({
 			<div className='postInfo'>
 				<div className='postCats'>
 					<span className='postCat'>
-						<Link className='link' to='/posts?cat=Music'>
+						<Link className='link' to='#'>
 							{category}
 						</Link>
 					</span>
