@@ -18,6 +18,7 @@ class Flipcard4 extends Component {
 				<FrontSide className="front4"></FrontSide>
 				<Link to="/Chat" className="text-card">
 				<BackSide className="back4"> 
+				Chats
 				</BackSide></Link>
 			</Flippy>
 		);

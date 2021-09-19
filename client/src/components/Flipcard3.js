@@ -18,6 +18,7 @@ class Flipcard3 extends Component {
 				<FrontSide className="front3"></FrontSide>
 				<Link to="/OCR" className="text-card">
 				<BackSide className="back3"> 
+				Image to text
 				</BackSide></Link>
 				
 			</Flippy>

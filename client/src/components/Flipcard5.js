@@ -18,6 +18,7 @@ class Flipcard5 extends Component {
 				<FrontSide className="front5"></FrontSide>
 				<Link to="/ContactUs" className="text-card">
 				<BackSide className="back5"> 
+				Contact Us
 				hi</BackSide></Link>
 			</Flippy>
 		);
