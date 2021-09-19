@@ -5188,6 +5188,11 @@
   "resolved" "https://registry.npmjs.org/filepond-plugin-image-preview/-/filepond-plugin-image-preview-4.6.10.tgz"
   "version" "4.6.10"
 
+"filepond@^4.29.1", "filepond@>=3.7.x < 5.x", "filepond@>=4.x <5.x":
+  "integrity" "sha512-j2YMYxzhDXYQScARkkYb5NwwfOxLWKWJK3v/Wozq1gQX3s5XLY3GfJhR9ysqP5l4697J3gIn898fRG5Z61UYIQ=="
+  "resolved" "https://registry.npmjs.org/filepond/-/filepond-4.29.1.tgz"
+  "version" "4.29.1"
+
 "filesize@6.1.0":
   "integrity" "sha512-LpCHtPQ3sFx67z+uh2HnSyWSLLu5Jxo21795uRDuar/EOuYWXib5EmPaGIBuSnRqH2IODiKA2k5re/K9OnN/Yg=="
   "resolved" "https://registry.npmjs.org/filesize/-/filesize-6.1.0.tgz"
