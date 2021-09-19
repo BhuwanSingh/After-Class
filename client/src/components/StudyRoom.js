@@ -41,9 +41,7 @@ const StudyRoom = () => {
 						)}
 					</CopyToClipboard>
 				</div>
-			) : (
-				<h1 className='to'>(No url generated)</h1>
-			)}
+			) : null}
 		</div>
 	);
 };

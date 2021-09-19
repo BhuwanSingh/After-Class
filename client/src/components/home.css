@@ -51,7 +51,9 @@ li {
 	text-decoration: none;
 	cursor: pointer;
 }
-
+.header__control {
+	width: 100vw;
+}
 .header__middle__logo {
 	width: 20%;
 	display: inline-block;
@@ -60,7 +62,7 @@ li {
 .header__middle__menus {
 	width: 80%;
 	display: inline-block;
-	float: left;
+	float: right;
 }
 .menu-item.menu__qqqitem a {
 	margin: 27px 10px;
