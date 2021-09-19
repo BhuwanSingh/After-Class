@@ -214,7 +214,7 @@ const Navbarmenu = () => {
 													activeClassName='is-active'
 													to={`/write`}
 												>
-													Write Doubt
+													Write Post
 												</NavLink>{' '}
 											</li>
 											<li>

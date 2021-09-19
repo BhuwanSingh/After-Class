@@ -1,4 +1,5 @@
 .posts{
+    background-color: greenyellow;
     flex: 9;
     display: flex;
     flex-wrap: wrap;
