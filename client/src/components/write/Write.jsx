@@ -39,7 +39,8 @@ export default function Write() {
       <form className="writeForm" onSubmit={handleSubmit}>
         <div className="writeFormGroup">
           <label htmlFor="fileInput">
-            <i className="writeIcon fas fa-plus"></i>
+            <i title="Upload your image here" className="writeIcon fas fa-plus myDIV"></i>
+ 
           </label>
           <input
             type="file"
@@ -50,10 +51,11 @@ export default function Write() {
           <input
             type="text"
             placeholder="Title"
-            className="writeInput"
+            className="writeInput writeTitle"
             autoFocus={true}
             onChange={e=>setTitle(e.target.value)}
           />
+
         </div>
         <div className="writeFormGroup">
           <textarea
@@ -63,7 +65,7 @@ export default function Write() {
             onChange={e=>setDesc(e.target.value)}
           ></textarea>
         </div>
-        <button className="writeSubmit" type="submit">
+        <button className="writeSubmit btn btn-primary btn-lg" type="submit">
           Publish
         </button>
       </form>

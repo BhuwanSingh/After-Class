@@ -3,13 +3,13 @@ import Flipcard from "./Flipcard";
 import Flipcard2 from "./Flipcard2";
 import Flipcard3 from "./Flipcard3";
 import Flipcard4 from "./Flipcard4";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 import "./styles.css";
 
 function Home() {
   return (
-    <div>
+    <div className="bb1">
       <div className="homehead">
         <div className="lefthome">
           <Flipcard />
