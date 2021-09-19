@@ -404,6 +404,7 @@ input[type='submit'] {
 }
 
 .bts__small {
+	text-decoration: none;
 	display: block;
 	padding-top: 0.3rem;
 	padding-bottom: 0.3rem;
