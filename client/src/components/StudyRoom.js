@@ -11,7 +11,7 @@ const StudyRoom = () => {
 		var id = crypto.randomBytes(20).toString('hex');
 		seturl('/whiteboard/' + id);
 	};
-	let completeurl = 'localhost:3000' + url;
+	let completeurl = 'after-class-dl282f8k2-bhuwansingh.vercel.app' + url;
 	return (
 		<div className='whiteboard__con'>
 			<h1 className='whiteboard__title'>Create whiteboard</h1>
